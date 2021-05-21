@@ -1,0 +1,32 @@
+@import url("general.css");
+
+/*EJERCICIO 01*/
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  margin-bottom:2em;
+}
+
+.gallery h2{
+   text-align: center;
+}
+
+.gallery .imgDiv{
+	width: 34%;
+	height:auto;
+}
+
+.gallery .imgDiv img{
+	object-fit: cover;
+	margin: .5em;
+	width: 95%;
+	height:auto;
+}
+
+.gallery .imgDiv p{
+  margin:0 1em 0 0;
+  text-align: right;
+  font-size: 12px; 
+}

@@ -1,0 +1,91 @@
+@import url("general.css");
+@import url("ejercicio01.css");
+
+/*EJERCICIO 02*/
+
+#header02 h1{
+	text-align:left;
+	margin-left:2em;
+}
+
+#header02 h1 > span{
+	font-size: 20px;
+    color: grey;
+	margin-left: 1em;
+}
+
+#nav02{
+	text-align: center;
+	background-color: grey;
+}
+
+#nav02 ul{
+	list-style: none; 
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+}
+
+#nav02 ul li{
+	padding: 1em 1em;
+	color: white;
+}
+
+#nav02 ul li:hover{
+	background-color: rgba(0,0,0, .4);
+}
+
+
+.gallery#gallery02 .imgDiv{
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  -o-transform:scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+ 
+}
+
+.gallery#gallery02 .imgDiv:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+} 
+
+.paragraf{
+	margin-top: 2em;
+}
+
+.paragraf h2{
+	font-family: 'Goblin One', cursive;
+}
+
+.paragraf p{
+	text-align: justify;
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+
+.paragraf p::first-letter {
+  font-size: 3em;
+  line-height: .8;
+  font-weight: bold;
+  margin-right: .1em;
+  
+}
+
+@media screen and (max-width: 760px){
+	 #header02 h1{
+		margin-left:1em;
+	}
+
+	#header02 h1 > span{
+		display: none;
+	}
+}

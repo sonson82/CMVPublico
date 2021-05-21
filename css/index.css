@@ -1,0 +1,46 @@
+
+@import url("general.css");
+
+/*INDEX*/
+
+#menu {
+	padding:4em;
+}
+
+#menu details{
+	margin-bottom: 2em;
+}
+
+#menu details summary{
+	color: black;
+}
+
+#menu .box_shadow{
+	padding: 1em;
+	box-shadow: 2px 2px 10px red; 
+	border-radius: 20px;  
+	background-color:#ddd;
+	width:100%;
+}
+
+#menu .box_shadow a{
+  color: black;
+  font-weight:400;
+}
+
+#menu .box_shadow a:hover{
+  font-weight:600;
+}
+
+
+#menu .box_shadow ul {
+  list-style: none; 
+}
+
+#menu .box_shadow ul li::before {
+  content: "\2022";  
+  color: red;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
