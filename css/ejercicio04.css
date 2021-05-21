@@ -1,0 +1,61 @@
+@import url("general.css");
+@import url("ejercicio01.css");
+@import url("ejercicio03.css");
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*GRID*/
+
+.marco {
+	display: grid;
+	grid-template-columns: 250px repeat(3,1fr);
+	grid-template-rows: 100px 40px auto 40px;
+	grid-gap: 10px;
+	width: 100vw;
+	height: 100vh;
+}
+		
+.encabezado {
+	grid-column: 1 / span 4;
+	grid-row: 1 / span 1;
+}
+		
+nav {
+	grid-column: 1 / span 4;
+	grid-row: 2 / span 1;
+}
+		
+.lado {
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+	
+	padding: 1em;
+	background-color: grey;
+	color: black;
+}
+
+.lado  p{
+	text-align:justify;
+}
+
+.lado  h2{
+	margin-bottom: 1em;
+	color: black;
+}
+	
+.contenido {
+	grid-column: 2 / span 3;
+	grid-row: 3 / span 1;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+		
+.pie {
+	grid-column: 1 / span 4;
+	grid-row: 4 / span 1;
+}	
+		
+		
