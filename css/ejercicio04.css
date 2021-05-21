@@ -2,11 +2,6 @@
 @import url("ejercicio01.css");
 @import url("ejercicio03.css");
 
-*{
-	padding: 0;
-	margin: 0;
-}
-
 /*GRID*/
 
 .marco {
@@ -26,6 +21,10 @@
 nav {
 	grid-column: 1 / span 4;
 	grid-row: 2 / span 1;
+}
+
+nav ul li {
+    padding: .6em 1em;
 }
 		
 .lado {
@@ -57,5 +56,36 @@ nav {
 	grid-column: 1 / span 4;
 	grid-row: 4 / span 1;
 }	
+
+#button{
+	margin: 2em .5em;
+	padding: 1em;
+	cursor: pointer; 
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+}
+
+#button:hover{
+
+	border-color:white;
+	background-color: black;
+	color: white;
+}
+
+body.noche{
+	background-color: white;
+}
+
+body.noche h1{
+	color: black;
+}
+
+
+
+
+
 		
 		

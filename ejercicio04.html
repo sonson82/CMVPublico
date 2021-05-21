@@ -21,7 +21,6 @@
 	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	
-	
 </head>
 
 <body>
@@ -48,6 +47,8 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie laoreet nibh et tincidunt. Donec in ornare est. Ut vel lobortis nisi. 
 				Nullam condimentum nec ipsum ac porta. Integer aliquet diam ut libero faucibus commodo sit amet quis justo. Nulla facilisi. 
 			</p>
+			<div id="button">VER MODO NOCHE</div>
+
 		</div>
 				
 		<div class="contenido">
@@ -126,6 +127,15 @@
 				<div>&copy; 2021 Sònia Pujol</div>
 			</footer>
 		</div>
+		
+		<script>
+			$( "#button" ).click(function() {
+			  $("body").toggleClass("noche");
+			  
+			  $("#button").text(($("#button").text() == 'VER MODO NOCHE') ? 'VER MODO DÍA' : 'VER MODO NOCHE').fadeIn();
+
+			});
+		</script>
 
 </body>
 </html>
