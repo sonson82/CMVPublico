@@ -1,0 +1,24 @@
+main{
+	margin: 4em auto;
+}
+
+.carousel-inner {
+    width: 80%;
+	margin: auto;
+}
+
+.carousel-inner img {
+	width: 80%;
+	height: auto;
+}
+
+.carousel-caption{
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	margin: auto;
+
+	right: 0;
+    bottom: -0.75rem;
+    left: 0;
+}
+
