@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: candara;
+  width: 100%;
+  background-color: #000;
+  color: #9b9b9b;
+}
+body h1 {
+  text-align: left;
+  margin-left: 2em;
+  color: #fff;
+}
+body h1 > span {
+  font-size: 20px;
+  color: #9b9b9b;
+  margin-left: 1em;
+}
+body h2 {
+  margin-top: 1em;
+  text-align: center;
+  color: #9b9b9b;
+}
+body a {
+  color: #9b9b9b;
+  text-decoration: none;
+}
+body a:hover {
+  color: #ff9900;
+}
+body a.enlace_desactivado {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: line-through;
+  color: grey;
+}
+body hr {
+  margin: 1em auto;
+  width: 80%;
+}
+body.modoNoche {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+body.modoNoche h1,
+body.modoNoche h2 {
+  color: #000;
+}
+body.modoNoche .encabezado header #button {
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+body.modoNoche #gallery .absoluteDiv.textAbsoluteDiv p {
+  color: #9b9b9b;
+}
+body .marco {
+  display: grid;
+  grid-template-columns: 250px repeat(3, 1fr);
+  grid-template-rows: 100px 40px auto 40px;
+  grid-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+body .encabezado {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+}
+body .encabezado header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .encabezado header #button {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  margin-right: 2em;
+  padding: 0.5em 1em;
+}
+body .encabezado header #button:hover {
+  border-color: #fff;
+  background-color: #000;
+  color: #fff;
+}
+body nav {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+  text-align: center;
+  background-color: #ff9900;
+}
+body nav ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+body nav ul li {
+  padding: 0.6em 1em;
+  color: #000;
+}
+body nav ul li:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+body .lado {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  text-align: justify;
+  border-right: 5px double #ff9900;
+}
+body .lado p {
+  margin-bottom: 4em;
+}
+body .contenido {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+body .contenido #content {
+  width: 90%;
+  margin: auto;
+}
+body .contenido #content #gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5em;
+}
+body .contenido #content #gallery .relativeDiv {
+  position: relative;
+  width: 500px;
+  min-height: 300px;
+  margin: 0.5em;
+}
+body .contenido #content #gallery .animateDiv {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.96);
+  -moz-transform: scale(0.96);
+  -o-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  transform: scale(0.96);
+}
+body .contenido #content #gallery .animateDiv:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+body .contenido #content #gallery .absoluteDiv {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+body .contenido #content #gallery .imgAbsoluteDiv picture {
+  width: 100%;
+}
+body .contenido #content #gallery .imgAbsoluteDiv img {
+  object-fit: cover;
+  width: 100%;
+}
+body .contenido #content #gallery .textAbsoluteDiv {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  bottom: 2px;
+}
+body .contenido #content .paragraf {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+body .contenido #content .paragraf h2 {
+  font-family: 'Goblin One', cursive;
+}
+body .contenido #content .paragraf p {
+  text-align: justify;
+  font-family: 'Nothing You Could Do', cursive;
+}
+body .contenido #content .paragraf p::first-letter {
+  font-size: 3em;
+  line-height: 0.8;
+  font-weight: bold;
+  margin-right: 0.1em;
+}
+body .pie {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+  background-color: #ff9900;
+}
+body .pie footer {
+  width: 100%;
+  line-height: 2;
+  text-align: center;
+  color: #000;
+}
+@media screen and (max-width: 1300px) {
+  body .lado {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  body .contenido {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .contenido #content #gallery {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  body .contenido #content #gallery .relativeDiv {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  header h1 {
+    margin-left: 1em;
+  }
+  header h1 > span {
+    display: none;
+  }
+  .hideOnSmall {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  body .contenido #content #gallery .relativeDiv {
+    min-height: 200px;
+    width: 300px;
+  }
+}
