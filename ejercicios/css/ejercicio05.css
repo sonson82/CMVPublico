@@ -164,6 +164,11 @@ body .contenido #content #gallery .animateDiv:hover {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+body .contenido #content #gallery .animateDiv:hover img {
+  box-shadow: 0px 13px 9px -9px #ff9900;
+  -webkit-box-shadow: 0px 13px 9px -9px #ff9900;
+  -moz-box-shadow: 0px 13px 9px -9px #ff9900;
+}
 body .contenido #content #gallery .absoluteDiv {
   position: absolute;
   right: 0;
