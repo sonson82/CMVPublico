@@ -1,0 +1,154 @@
+/* 
+INDEX:
+	VARIABLES
+	GENERAL AREA
+	HEADER AREA
+	MAIN AREA
+	FOOTER AREA
+*/
+
+
+/*VARIABLES*/
+:root {
+	/*Colors*/
+	--black: #000;
+	--white: #fff;
+	--grey: #969696;
+	--darkGrey: #212121;
+	--orange: #ff9900;
+
+	/*Units*/
+	--unit: 1.5rem;
+	--unit2: calc(var(--unit) * 2);
+	--allWidth: 100%;
+	--allHeight: 100vh;
+}
+
+
+/*GENERAL AREA*/
+* {
+	 /*Include padding and border in the element's total width and height*/
+	box-sizing:border-box;
+	/*Reset margin and padding from elements*/
+	margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: var(--black);
+	color: var(--grey);
+	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+	font-size: 16px;
+}
+
+
+
+
+
+/*Text*/
+h1{
+	margin-top: var(--unit);
+	text-align:center;
+	color:var(--white);
+}
+
+h2{
+	margin-top: var(--unit);;
+	text-align:center;
+	color: var(--grey);
+}
+
+/*Links*/
+a{
+	color: var(--grey);
+	text-decoration: none;
+}
+  
+a:hover{
+	color: var(--orange);
+}
+
+/*Others*/
+hr{
+	margin:  var(--unit) auto;
+	width: 80%;
+	border-color: var(--orange);
+}
+
+
+/*HEADER AREA*/
+header{
+	margin: var(--unit2);
+}
+
+#backToMenu{
+	padding: var(--unit2) 0 0 var(--unit2);
+}
+
+#backToMenu p{
+	line-height: 1;
+	position: relative;
+	padding-left: var(--unit);
+}
+
+#backToMenu p::before{
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    content: "";
+    display: block;
+    height: 6px;
+    left: 0px;
+    position: absolute;
+    width: 6px;
+    margin-top: -3px;
+    top: 50%;
+    transition: left 0.1s;
+    transform: rotate( 45deg );
+    -webkit-transform: rotate( 45deg );
+}
+
+/*MAIN AREA*/
+main#content{
+	width: 80%;
+	margin: var(--unit) auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  margin-bottom:var(--unit2);
+}
+
+.gallery h2{
+   text-align: center;
+   font-size: 16px;
+}
+
+.gallery .imgDiv{
+	width: 34%;
+	height:auto;
+}
+
+.gallery .imgDiv img{
+	object-fit: cover;
+	margin: .5em;
+	width: 95%;
+	height:auto;
+}
+
+.gallery .imgDiv p{
+  margin:0 1em 0 0;
+  text-align: right;
+  font-size: 12px; 
+}
+
+/*FOOTER AREA*/
+footer{
+	width: var(--allWidth);
+	text-align:center;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 2em;
+}
+
