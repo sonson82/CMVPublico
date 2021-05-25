@@ -2,13 +2,13 @@
 INDEX:
 	VARIABLES
 	GENERAL AREA
+	GRID AREA
 	HEADER AREA
 	NAVIGATION AREA
 	MAIN AREA
 	FOOTER AREA
 	MEDIA
 */
-
 
 /*VARIABLES*/
 :root {
@@ -43,12 +43,20 @@ body{
 	font-size: 16px;
 }
 
+body.noche{
+	background-color: var(--white);
+}
+
 /*Text*/
 h1{
 	margin-top: var(--unit);
 	margin-left: var(--unit2);
 	text-align:left;
 	color:var(--white);
+}
+
+body.noche h1{
+	color: var(--black);
 }
 
 /*Links*/
@@ -66,6 +74,44 @@ hr{
 	margin:  var(--unit) auto;
 	width: 80%;
 	border-color: var(--orange);
+}
+
+/*GRID AREA*/
+.marco {
+	display: grid;
+	grid-template-columns: 250px repeat(3,1fr);
+	grid-template-rows: 100px 40px auto 40px;
+	grid-gap: 10px;
+	width: var(--allWidth);
+	height: var(--allHeight);
+}
+		
+.encabezado {
+	grid-column: 1 / span 4;
+	grid-row: 1 / span 1;
+}
+		
+nav {
+	grid-column: 1 / span 4;
+	grid-row: 2 / span 1;
+}
+	
+.lado {
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+}
+
+.contenido {
+	grid-column: 2 / span 3;
+	grid-row: 3 / span 1;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+		
+.pie {
+	grid-column: 1 / span 4;
+	grid-row: 4 / span 1;
+	background-color: var(--orange);
 }
 
 
@@ -95,7 +141,7 @@ nav ul{
 }
 
 nav ul li{
-	padding: var(--unit);
+	padding: .65em var(--unit);
 	color: var(--black);
 }
 
@@ -105,7 +151,39 @@ nav ul li:hover{
 }
 
 /*MAIN AREA*/
-main#content{
+.lado {
+	padding: var(--unit);
+	background-color: var(--grey);
+	color: var(--black);
+}
+
+.lado  p{
+	text-align:justify;
+}
+
+.lado  h2{
+	margin-bottom: var(--unit);;
+}
+
+#button{
+	margin: 2em .5em;
+	padding: 1em;
+	cursor: pointer; 
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid var(--black);;
+	background-color: var(--white);
+	color: var(--black);
+}
+
+#button:hover{
+	border-color:var(--white);
+	background-color: var(--black);
+	color: var(--white);
+}
+
+
+#content{
 	width: 80%;
 	margin: var(--unit) auto;
 }
@@ -113,45 +191,68 @@ main#content{
 .gallery {
   display: flex;
   justify-content: center;
-  align-content: flex-start;
+  align-items: flex-start;
   margin-bottom: var(--unit2);
 }
 
-.gallery .imgDiv{
-	width: 34%;
-	height:auto;
+
+.gallery .relativeDiv{
+	position: relative;
+	width: 500px;
+	min-height: 300px;
+	margin: .5em;
+}
+
+.gallery .animateDiv{
 	transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
-	-webkit-transform: scale(.9);
-	-moz-transform: scale(.9);
-	-o-transform:scale(.9);
-	-ms-transform: scale(.9);
-	transform: scale(.9);
+	-webkit-transform: scale(.96);
+	-moz-transform: scale(.96);
+	-o-transform:scale(.96);
+	-ms-transform: scale(.96);
+	transform: scale(.96);
 }
-
-.gallery .imgDiv:hover {
+  
+.gallery .animateDiv:hover {
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-} 
+}
 
-.gallery .imgDiv img{
+.gallery .animateDiv:hover img{
+	box-shadow: 0px 13px 9px -9px #ff9900;
+	-webkit-box-shadow: 0px 13px 9px -9px #ff9900;
+	-moz-box-shadow: 0px 13px 9px -9px #ff9900;
+}
+	
+.gallery .absoluteDiv{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+	
+.gallery .imgAbsoluteDiv picture{
+	width: 100%;
+}
+
+.gallery .imgAbsoluteDiv img{
 	object-fit: cover;
-	margin: .5em;
-	width: 95%;
-	height:auto;
+	width: 100%;
+}
+	
+.gallery .textAbsoluteDiv{
+	background-color: rgba(0,0,0, .8);
+	width: 100%;
+	min-height: 50px;
+	text-align: center;
+	bottom: 2px;
 }
 
-.gallery .imgDiv p{
-  margin:0 1em 0 0;
-  text-align: right;
-  font-size: 12px; 
-}
 
 .paragraf{
 	margin: var(--unit2) 0;
@@ -174,27 +275,28 @@ main#content{
   margin-right: .1em;
 }
 
+
 /*FOOTER AREA*/
 footer{
 	width: var(--allWidth);
 	text-align:center;
-	margin-bottom: 2em;
+	margin-bottom: var(--unit2);;
+	color: var(--black);
+	line-height: 2;
 }
 
+
 /*MEDIA*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1300px){
+	
 	.gallery {
-		display: block;
-		margin: auto;
+		display: block ;
+	}
+	
+	.gallery .relativeDiv{
+		margin:auto;
 	}
 
-	.gallery .imgDiv {
-		width: auto;
-	}
-
-	.gallery .imgDiv p {
-		margin: 0 3em 0 0;
-	}
 }
 
 @media screen and (max-width: 760px){
@@ -211,4 +313,4 @@ footer{
 	.hideOnSmall{
 		display: none;
 	} 
-}
+}	
