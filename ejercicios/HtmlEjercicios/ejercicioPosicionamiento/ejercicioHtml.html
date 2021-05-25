@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>POSICIONAMIENTO CSS</title>
+	
+	<link href="ejercicioHtml.css" rel="stylesheet"/>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>EJERCICIOS POSICIONAMIENTO CSS</h1>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+	
+		<div id="ejerciciosContent">
+			
+			<div class="contenedores">
+				<h2>JUNTOS <span>con FLOAT</span></h3> 
+				<div class="cajaAmarilla" id="cajaAmarilla01">
+				</div>
+				
+				<div class="cajaVerde" id="cajaVerde01">
+				</div>
+				<div id="clearDiv"></div>
+			</div>
+			
+			 
+			<div class="contenedores divSuperpuestos">
+			<h2>SUPERPUESTOS <span>con POSICIONES relativa y absoluta</span></h3> 
+			
+				<div class="cajaAzul"></div>
+				
+				<div class="relativeDiv">
+					<div class="cajaAmarilla cajaAmarillaEspecial"></div>
+					<div class="cajaVerde" id="cajaVerde02"></div>
+				</div>
+			</div>
+			
+			<div class="contenedores divSuperpuestos">
+			<h2>SUPERPUESTOS 02 <span>con POSICIONES relativa y absoluta + DISPLAY FLEX</span></h3> 
+			
+				<div class="cajaAzul"></div>
+				
+				<div class="relativeDiv">
+					<div class="cajaAmarilla cajaAmarillaEspecial"></div>
+					<div class="absoluteDiv">
+						<div class="cajaVerde" id="cajaVerde03"></div>
+						<div class="cajaBlanca" id="cajaBlanca03"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contenedores divSuperpuestos">
+			<h2>SUPERPUESTOS 03 <span> TEXTO </span></h3> 
+			
+				<div class="cajaAzul"><p>Caja AZUL</p></div>
+				
+				<div class="relativeDiv">
+					<div class="cajaAmarilla cajaAmarillaEspecial"><p>Caja AMARILLA</p></div>
+					<div class="absoluteDiv">
+						<div class="cajaVerde"><p>Caja VERDE</p></div>
+						<div class="cajaBlanca"><p>Caja BLANCA</p></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contenedores divSuperpuestos">
+			<h2>SUPERPUESTOS 04 <span> TEXTO CENTRADO con DISPLAY FLEX</span></h3> 
+			
+				<div class="caja cajaAzul"><p>Caja AZUL</p></div>
+				
+				<div class="relativeDiv">
+					<div class="caja cajaAmarilla cajaAmarillaEspecial"><p>Caja AMARILLA</p></div>
+					<div class="absoluteDiv">
+						<div class="caja cajaVerde"><p>Caja VERDE</p></div>
+						<div class="caja cajaBlanca"><p>Caja BLANCA</p></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contenedores divSuperpuestos">
+			<h2>SUPERPUESTOS 05 <span> Caja azul STICKY</span></h3> 
+			
+				<div class="caja cajaAzul" id="cajaAzulEspecial"><p>Caja AZUL</p></div>
+				
+				<div class="relativeDiv">
+					<div class="caja cajaAmarilla cajaAmarillaEspecial"><p>Caja AMARILLA</p></div>
+					<div class="absoluteDiv">
+						<div class="caja cajaVerde"><p>Caja VERDE</p></div>
+						<div class="caja cajaBlanca"><p>Caja BLANCA</p></div>
+					</div>
+				</div>
+				<div id="heigth"></div>
+			</div>
+		</div>
+		
+	</main>
+
+	<footer>
+		<div>&copy; 2021 Sònia Pujol</div>
+	</footer>
+</body>
+</html>

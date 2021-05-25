@@ -1,0 +1,131 @@
+* {
+	box-sizing:border-box;
+}
+		
+body{
+	margin: 0;
+	color: grey
+}
+
+footer{
+	width: 100%;
+	text-align:center;
+	margin-bottom: 2em;
+}
+
+h1{
+	margin: 2em 0 1em 0;
+	width:100%;
+	text-align:center;
+}
+
+#ejerciciosContent{
+	padding: 3em;
+	
+}
+
+#ejerciciosContent h2 > span{
+	font-size: small;
+	
+}
+
+#ejerciciosContent > .contenedores{
+	padding: 2em 0;
+	margin-bottom: 2em;
+}
+
+#ejerciciosContent .cajaAmarilla{
+	margin: 0;
+	width: 500px;
+	height: 200px;
+	color: green;
+	background-color: yellow;
+}
+
+#ejerciciosContent .cajaVerde{
+	margin: 0;
+	width: 100px;
+	height: 100px;
+	color: yellow;
+	background-color: green;
+}
+
+#ejerciciosContent .cajaAzul{
+	margin: 0;
+	width: 200px;
+	height: 100px;
+	color:white;
+	background-color: blue;
+}
+
+#ejerciciosContent .cajaBlanca{
+	margin: 0.5em;
+	width: 100px;
+	height: 100px;
+	color:blue;
+	background-color: white;
+}
+
+#ejerciciosContent .caja{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .5em;
+}
+
+#ejerciciosContent .caja p{
+	text-align: center;
+}
+
+#ejerciciosContent .cajaAmarilla#cajaAmarilla01{
+	float: left;
+}
+
+#ejerciciosContent .cajaVerde#cajaVerde01{
+	float: left;
+
+}
+
+#ejerciciosContent #clearDiv{
+	clear: both;
+}
+
+#ejerciciosContent .divSuperpuestos .relativeDiv{
+	position: relative;
+	min-height:200px;
+}
+
+
+#ejerciciosContent .divSuperpuestos .cajaAmarilla.cajaAmarillaEspecial{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#ejerciciosContent .divSuperpuestos  .cajaVerde#cajaVerde02{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#ejerciciosContent .divSuperpuestos  .absoluteDiv{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+}
+
+
+#ejerciciosContent .divSuperpuestos  .cajaAzul#cajaAzulEspecial{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index:10;
+}
+
+#ejerciciosContent .divSuperpuestos #heigth{
+	width: 100%;
+	margin: 2em 0;
+	min-height: 1000px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
