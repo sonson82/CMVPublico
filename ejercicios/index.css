@@ -14,7 +14,7 @@ INDEX:
 	--black: #000;
 	--white: #fff;
 	--grey: #969696;
-	--darkGrey: #212121;
+	--darkGrey: #313131;
 	--orange: #ff9900;
 
 	/*Units*/
@@ -100,6 +100,10 @@ main#content{
 #menu {
 	width: 80%;
 	margin: auto;
+}
+
+#menu details{
+	margin-top: var(--unit);
 }
 
 #menu summary{
