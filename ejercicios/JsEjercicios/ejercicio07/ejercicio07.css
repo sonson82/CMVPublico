@@ -1,0 +1,50 @@
+/* 
+INDEX:
+	VARIABLES
+	GENERAL AREA
+	HEADER AREA
+	NAVIGATION AREA
+	MAIN AREA
+	FOOTER AREA
+	MEDIA
+*/
+
+/*VARIABLES*/
+:root {
+	/*Colors*/
+	--black: #000;
+	--white: #fff;
+	--grey: #969696;
+	--darkGrey: #212121;
+	--orange: #ff9900;
+
+	/*Units*/
+  --unit: .5rem;
+	--unitX1: calc(var(--unit) * 2);
+	--unitX2: calc(var(--unit) * 4);
+	--allWidth: 100%;
+	--allHeight: 100vh;
+}
+
+
+/*GENERAL AREA*/
+* {/*For all elements*/
+	 /*Include padding and border in the element's total width and height*/
+	box-sizing:border-box;
+	/*Reset margin and padding from elements*/
+	margin: 0;
+  padding: 0;
+  /*Font*/
+	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+	font-size: 16px;
+  color: var(--grey);
+}
+
+body{
+	background-color: var(--black);
+}
+
+
+
+
+
