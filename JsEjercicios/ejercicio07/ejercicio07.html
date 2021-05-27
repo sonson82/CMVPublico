@@ -12,32 +12,47 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	  <![endif]-->
 	  
-	<!-- importante SEO para la etiqueta del navegador -->
-	<title>EJERCICIO JAVASCRIPT</title>
-	
-	<!-- una hoja de estilos personalizada-->
+	<title>EJERCICIO 07</title>
+
 	<link href="ejercicio07.css" rel="stylesheet"/>
-	
-	<!-- iconos u otros elementos externos -->
+
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-	
-	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;500&family=Limelight&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="ejercicio07.js"></script>
 </head>
 
 
-<body>
+<body onload="funcionesBasicas();" id="screen">
 	<header>
-		<h1>EJERCICIO JAVASCRIPT</h1>
-		<h2>... y vuelto a cambiar en localhost </h2>
+		<h1>EJERCICIOS INICIALES JAVASCRIPT<span>... practicando las bases de javascript</span></h1>
 	</header>
 
 	<main>
+		<div id="content">
 
+			<ul>
+				<li><a onclick="funcionBasica01()">Ejercicio 01</a> Trabajando con VARIABLES 1</li>
+				<li><a onclick="funcionBasica02()">Ejercicio 02</a> Trabajando con VARIABLES 2</li>
+				<li><a onclick="ejercicioC5()">Ejercicio 03</a> Trabajando con CONDICIONALES 1</li>
+				<li><a onclick="ejercicioC13()">Ejercicio 04</a> Trabajando con CONDICIONALES 2</li>
+				<li><a onclick="domUrl()">Ejercicio 05</a> Trabajando con DOM </li>
+			</ul>
+
+			<div id="salidaJS"></div>
+
+		</div>
+		
 	</main>
 
 	<footer>
-		<div>&copy; 2021  <a href="https://sonson82.github.io/CMVPublico/ejercicios/" target="_blank" rel="nofollow">Sònia Pujol</a>  </div>
+		<div><p>&copy; 2021  <a href="https://sonson82.github.io/CMVPublico/ejercicios/" target="_blank" rel="nofollow">Sònia Pujol</a></p></div>
 	</footer>
+	
 </body>
 </html>
+

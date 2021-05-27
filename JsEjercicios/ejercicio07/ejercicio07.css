@@ -3,10 +3,8 @@ INDEX:
 	VARIABLES
 	GENERAL AREA
 	HEADER AREA
-	NAVIGATION AREA
 	MAIN AREA
 	FOOTER AREA
-	MEDIA
 */
 
 /*VARIABLES*/
@@ -14,14 +12,15 @@ INDEX:
 	/*Colors*/
 	--black: #000;
 	--white: #fff;
-	--grey: #969696;
+	--lightGrey: #969696;
 	--darkGrey: #212121;
-	--orange: #ff9900;
+	--darkBlue: #0000ff;
+	--lightBlue: #e6f2ff;
 
 	/*Units*/
-  --unit: .5rem;
-	--unitX1: calc(var(--unit) * 2);
-	--unitX2: calc(var(--unit) * 4);
+  	--unit: .5rem;
+	--unitX2: calc(var(--unit) * 2);
+	--unitX4: calc(var(--unit) * 4);
 	--allWidth: 100%;
 	--allHeight: 100vh;
 }
@@ -33,17 +32,109 @@ INDEX:
 	box-sizing:border-box;
 	/*Reset margin and padding from elements*/
 	margin: 0;
-  padding: 0;
-  /*Font*/
-	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-	font-size: 16px;
-  color: var(--grey);
+  	padding: 0;
 }
 
 body{
-	background-color: var(--black);
+	background-color: var(--white);
+	font-family: 'KoHo', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+ 	color: var(--darkGrey);
 }
 
+/*Text*/
+h1{
+	margin-bottom: var(--unitX2);
+	text-align:left;
+	font-size: xx-large;
+	font-family:'Sigmar One', cursive;
+	
+}
+
+h1 > span{
+	font-size: x-large;
+	color: var(--lightGrey);
+	margin-left: var(--unit);
+	font-family: 'Limelight', cursive;
+}
+
+/*HEADER AREA*/
+header{
+	padding: var(--unitX2);
+	background-color: var(--white);
+}
+
+/*MAIN AREA*/
+main{
+	background-color: var(--lightBlue);
+	padding: var(--unitX4);
+}
+
+#content{
+	width: 90%;
+	margin: auto;
+}
+
+ul{
+	list-style: none;
+}
+
+ul li{
+	color: var(--lightGrey);
+	margin-bottom:var(--unitX2);
+}
+
+ul li::before{
+	content: "\25BA";  
+	color: var(--lightGrey);
+	display: inline-block; 
+	margin-right: var(--unit);
+}
+
+ul a{
+	color: var(--darkGrey);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+ul a::after {
+	content: "\2192";  
+	color: var(--darkGrey);
+	display: inline-block; 
+	margin-left: var(--unit);
+}
+
+ul a:hover{
+	font-weight: 500;
+}
+
+#salidaJS{
+	margin: var(--unitX4);
+	padding: var(--unitX2);
+	background-color: var(--white);
+}
+
+/*FOOTER AREA*/
+footer{
+	padding: var(--unit) 0;
+	text-align: center;
+	background-color: var(--darkGrey);
+}
+
+footer p,
+footer a{
+	color: var(--white);
+	font-weight: 300;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer a:hover{
+	font-weight: 500;
+}
 
 
 
