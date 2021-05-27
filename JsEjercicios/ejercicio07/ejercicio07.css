@@ -106,13 +106,46 @@ ul a::after {
 }
 
 ul a:hover{
-	font-weight: 500;
+	font-weight: 600;
 }
 
 #salidaJS{
 	margin: var(--unitX4);
 	padding: var(--unitX2);
 	background-color: var(--white);
+}
+
+#backToMenu{
+	padding: var(--unit2) 0 0 var(--unit2);
+}
+
+#backToMenu p{
+	line-height: 1;
+	position: relative;
+	padding-left: var(--unitX2);
+}
+
+#backToMenu p::before{
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    content: "";
+    display: block;
+    height: 6px;
+    left: 0px;
+    position: absolute;
+    width: 6px;
+    margin-top: -3px;
+    top: 50%;
+    transition: left 0.1s;
+    transform: rotate( 45deg );
+    -webkit-transform: rotate( 45deg );
+}
+#backToMenu a{
+	color: var(--lightGrey);
+}
+
+#backToMenu a:hover{
+	color: var(--darkGrey);
 }
 
 /*FOOTER AREA*/
