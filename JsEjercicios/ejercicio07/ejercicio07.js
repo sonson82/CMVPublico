@@ -133,7 +133,6 @@ function domUrl(){
     let sW = screen.availWidth;
 
     div.innerHTML = `<p> La URL de la pagina actual es: ${location}.</p>
-                     <p> La pantalla es: ${screen}.</p>
                      <p> El alto del documento es: ${h}.</p>
                      <p> El ancho del documento es: ${w}.</p>
                      <p> El alto de la pantalla es: ${sH}.</p>
