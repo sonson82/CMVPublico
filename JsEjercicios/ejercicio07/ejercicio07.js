@@ -1,14 +1,3 @@
-
-function funcionesBasicas (){
-
-    //funcionBasica01();
-    //funcionBasica02();
-    //ejercicioC5();
-    //ejercicioC13();
-
-}
-/* ------------------------------------------------- */
-
 function funcionBasica01 (){
     let num1 = 0;
     let num2 = 0;
