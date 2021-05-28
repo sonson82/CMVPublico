@@ -75,6 +75,18 @@ main{
 	width: 90%;
 	margin: auto;
 }
+details{
+	margin-left: 2px;
+}
+
+summary{
+	margin-bottom: var(--unitX2);
+	color: var(--lightGrey);
+}
+
+summary:hover{
+	color: var(--darkGrey);
+}
 
 ul{
 	list-style: none;
