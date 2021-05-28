@@ -108,6 +108,7 @@ main#content{
 
 #menu summary{
 	color: var(--white);
+	cursor: pointer;
 }
 
 #menu ul{
