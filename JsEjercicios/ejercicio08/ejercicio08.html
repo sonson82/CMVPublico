@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<!-- polyfill para soportar CSS3 Media Queries en MS explorer viejos -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	  
+	<title>EJERCICIO 08</title>
+
+	<link href="ejercicio08.css" rel="stylesheet"/>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;500&family=Limelight&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="ejercicio08.js"></script>
+</head>
+
+
+<body onload="controlar()">
+	<header>
+		<h1>EJERCICIOS INICIALES JAVASCRIPT<span> Lectura archivo XML</span></h1>
+	</header>
+
+	<main>
+		<div id="content">
+
+			<details>
+				<summary>Ejercicios básicos</summary>
+				<ul>
+					<li><a onclick="$(`#salidaJS`).text(suma(2,3))">Ejercicio 01</a> Suma con función (parámetros específicos: 2 y 3)</li>
+					<li><a onclick="$(`#salidaJS`).text(sumaCuadrados(2,3))">Ejercicio 02</a> Suma de cuadrados (parámetros específicos: 2 y 3)</li>
+					<li><a onclick="$(`#salidaJS`).text(sumaFlecha(2,3))">Ejercicio 03</a> Suma con función flecha (parámetros específicos: 2 y 3)</li>
+					<li><a onclick="$(`#salidaJS`).text(sumaEntradaTeclado())">Ejercicio 04</a> Suma con función flecha y entrada parámetros por teclado</li>
+				</ul>
+
+				<div class="salidasJS" id="salidaJS"></div>
+
+			</details>
+
+			<br>
+
+			<details open>
+				<summary>Ejercicios lectura XML</summary>
+				<ul>
+					<li><a onclick="lecturaXMLdesdeGitHub()">Desde GITHUB </a> <span>Fuente  XML: <a href="https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml" rel="nofollow" target="_blank"> https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml</a></span></li>
+				</ul>
+
+				<div class="salidasJS" id="salidaTabla"></div>
+
+			</details>
+
+			<br>
+
+			<details open>
+				<summary onclick="$(`#salidaJS`).text(``)">Ejercicio con formulario y validación XML </summary>
+
+				<form method="GET" class="flexBox" id="ingresar" name="miFormulario" action="#" onSubmit="return intentar()">
+					<label for="apellido">Usuario:</label><br>
+					<input type="text" id="usr" name="formUsuario" required><br><br>
+					<label for="apellido">Clave:</label><br>
+					<input type="text" id="clv" name="formClave" required><br><br>
+					<input type="submit" id="formButton" value="INGRESAR">
+				</form>
+				<br><br>
+				<div class="flexBox">
+					<button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
+					<button onclick="desconectar()">LIMPIAR MEMORIA</button>
+				</div>
+				
+
+				<div class="salidasJS" id="salidaForm"></div>
+			</details>
+
+			<br>
+
+			<div id="backToMenu">
+				<a href="../../index.html"><p>Volver al menú</p></a>
+			</div>
+
+		</div>
+		
+	</main>
+
+	<footer>
+		<div><p>&copy; 2021  <a href="https://sonson82.github.io/CMVPublico/ejercicios/" target="_blank" rel="nofollow">Sònia Pujol</a></p></div>
+	</footer>
+	
+</body>
+</html>
+
+
