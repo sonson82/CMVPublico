@@ -35,7 +35,7 @@
 	<main>
 		<div id="content">
 
-			<details>
+			<details open>
 				<summary>Ejercicios básicos</summary>
 				<ul>
 					<li><a onclick="$(`#salidaJS`).text(suma(2,3))">Ejercicio 01</a> Suma con función (parámetros específicos: 2 y 3)</li>
@@ -50,7 +50,7 @@
 
 			<br>
 
-			<details>
+			<details open>
 				<summary>Ejercicios lectura XML</summary>
 				<ul>
 					<li><a onclick="lecturaXMLdesdeGitHub()">Desde GITHUB </a> <span>Fuente  XML: <a href="https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml" rel="nofollow" target="_blank"> https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml</a></span></li>
@@ -62,8 +62,8 @@
 
 			<br>
 
-			<details>
-				<summary onclick="$(`#salidaForm`).text(``)">Ejercicio con formulario y validación XML </summary>
+			<details open>
+				<summary onclick="$(`#salidaForm`).text(``)">Ejercicio login usuario con validación XML </summary>
 
 				<div class="flexBox" id="formulario">
 					<form method="GET" class="flexBox" id="ingresar" name="miFormulario" action="#" onSubmit="intentar()">
