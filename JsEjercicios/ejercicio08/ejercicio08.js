@@ -70,7 +70,7 @@ let lecturaXMLdesdeGitHub = () => {
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            crearAccederDatos(this);
+            crearAccederDatos(this, "Desde GitHub");
           }
         };
         xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml", true);
@@ -83,15 +83,15 @@ function lecturaXMLdesdeLocal (){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-		miFuncion(this,"Desde aquí");
+		crearAccederDatos(this,"Desde aquí");
 	}
 	};
 	xhr.open("GET", "usuarios.xml", true);
 	xhr.send();
 }
 
-function crearAccederDatos(xml) {
-	fuente = "Desde GitHub";
+function crearAccederDatos(xml, desde) {
+	fuente = desde;
 	fuenteYorden = fuente + " orden inicial";
 	registrados = [];
     let i;
