@@ -60,8 +60,9 @@ let sumaEntradaTeclado = () => {
 /* Ejercicio día  */
 
 //Ejemplo de Carlos:   https://carlosboniniklison.github.io/publico/ejercicios/xml/27-abr-xml.html
-
 let registrados = [];
+let fuente = "";
+let fuenteYorden = "";
 
 let lecturaXMLdesdeGitHub = () => {
 
@@ -69,7 +70,7 @@ let lecturaXMLdesdeGitHub = () => {
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            crearTablaConDatos(this,"Desde GitHub");
+            crearAccederDatos(this);
           }
         };
         xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml", true);
@@ -77,30 +78,74 @@ let lecturaXMLdesdeGitHub = () => {
 
 }
 
-function crearTablaConDatos(xml,fuente) {
-
-    let div = document.getElementById("salidaTabla");
+function crearAccederDatos(xml) {
+	fuente = "Desde GitHub";
+	fuenteYorden = fuente + " orden inicial";
     let i;
     let usrNom;
     let usrPsw;
-    let usuario = [];
+	var usuario = [];
     let xmlDoc = xml.responseXML;
-    let tabla=fuente + "<br/>" + "<br/>";
     let x = xmlDoc.getElementsByTagName("usuario");
     
-    tabla += "<table style='width:300px; text-align:center; border:1px solid #000;'><tr><th style='width:50%;'>Empleado</th><th style='width:50%;'>Clave</th></tr>";
+
     for (i = 0; i <x.length; i++) { 
      
       usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
       usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+
+	 	usuario = [usrNom,usrPsw];
+		registrados.push(usuario);
+
+    }
+
+ 	mostrarTabla();
+
+ }
+
+
+  function mostrarTabla(){
+
+	let div = document.getElementById("salidaTabla");
+
+	let tabla= fuenteYorden + "<br/>" + "<br/>";
+    
+    tabla += "<table style='width:300px; text-align:center; border:1px solid #000;'><tr><th style='width:50%;'>Empleado</th><th style='width:50%;'>Clave</th></tr>";
+    for (i = 0; i < registrados.length; i++) { 
      
-      tabla += "<tr><td  style='width:50%;'>" + usrNom + "</td><td  style='width:50%;'>" + usrPsw + "</td></tr>";
+	  
+      tabla += "<tr><td  style='width:50%;'>" + registrados[i][0] + "</td><td  style='width:50%;'>" + registrados[i][1] + "</td></tr>";
     }
     tabla += "</table>"
 
     div.innerHTML = tabla;
-      
+
   }
+
+  function ordenarNombreUsuario(){
+
+	fuenteYorden = fuente + " ordenados por nombre de usuario";
+	registrados.sort(
+		(usuario1,usuario2) =>
+		   usuario1[0].localeCompare(usuario2[0]),
+	  );
+
+	  mostrarTabla();
+
+  }
+
+  function ordenarClaveUsuario(){
+
+	fuenteYorden = fuente + " ordenados por clave de usuario";
+	registrados.reverse(
+		(usuario2,usuario1) =>
+		   usuario1[1].localeCompare(usuario2[1]),
+	  );
+
+	  mostrarTabla();
+
+  }
+
 
 /* ------------------------------------------------- */
 
