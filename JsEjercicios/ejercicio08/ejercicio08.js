@@ -78,9 +78,22 @@ let lecturaXMLdesdeGitHub = () => {
 
 }
 
+function lecturaXMLdesdeLocal (){
+	// lee desde aquí.
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		miFuncion(this,"Desde aquí");
+	}
+	};
+	xhr.open("GET", "usuarios.xml", true);
+	xhr.send();
+}
+
 function crearAccederDatos(xml) {
 	fuente = "Desde GitHub";
 	fuenteYorden = fuente + " orden inicial";
+	registrados = [];
     let i;
     let usrNom;
     let usrPsw;
@@ -108,17 +121,27 @@ function crearAccederDatos(xml) {
 
 	let div = document.getElementById("salidaTabla");
 
-	let tabla= fuenteYorden + "<br/>" + "<br/>";
-    
-    tabla += "<table style='width:300px; text-align:center; border:1px solid #000;'><tr><th style='width:50%;'>Empleado</th><th style='width:50%;'>Clave</th></tr>";
-    for (i = 0; i < registrados.length; i++) { 
-     
-	  
-      tabla += "<tr><td  style='width:50%;'>" + registrados[i][0] + "</td><td  style='width:50%;'>" + registrados[i][1] + "</td></tr>";
-    }
-    tabla += "</table>"
+	if (registrados.length != 0){
 
-    div.innerHTML = tabla;
+		let tabla= fuenteYorden + "<br/>" + "<br/>";
+    
+		tabla += "<table style='width:300px; text-align:center; border:1px solid #000;'><tr><th style='width:50%;'>Empleado</th><th style='width:50%;'>Clave</th></tr>";
+		for (i = 0; i < registrados.length; i++) { 
+		 
+		  
+		  tabla += "<tr><td  style='width:50%;'>" + registrados[i][0] + "</td><td  style='width:50%;'>" + registrados[i][1] + "</td></tr>";
+		}
+		tabla += "</table>"
+	
+		div.innerHTML = tabla;
+
+	} else {
+
+		div.innerHTML = "No hay datos disponibles. Indica de que archivo XML quieres extraerlos.";
+	}
+	 
+
+	
 
   }
 
