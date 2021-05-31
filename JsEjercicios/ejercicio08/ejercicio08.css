@@ -171,18 +171,24 @@ ul li > span a:hover {
 }
 
 /*FORM*/
-#ingresar{
-	max-width: 600px;
+
+.flexBox{
+	max-width: 800px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 }
+
+#ingresar{
+	min-width: 600px;
+}
+
 #formButton,
 button,
 input{
 	padding: var(--unit);
 }
+
 
 /*FOOTER AREA*/
 footer{
