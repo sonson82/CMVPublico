@@ -83,7 +83,7 @@ function lecturaXMLdesdeLocal (){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-		crearAccederDatos(this,"Desde aquí");
+		crearAccederDatos(this,"Desde local");
 	}
 	};
 	xhr.open("GET", "usuarios.xml", true);
