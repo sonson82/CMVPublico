@@ -1,0 +1,173 @@
+/* 
+INDEX:
+	VARIABLES
+	GENERAL AREA
+	HEADER AREA
+	MAIN AREA
+	FOOTER AREA
+*/
+
+/*VARIABLES*/
+:root {
+	/*Colors*/
+	--black: #000;
+	--white: #fff;
+	--lightGrey: #969696;
+	--darkGrey: #212121;
+	--darkBlue: #0000ff;
+	--lightBlue: #e6f2ff;
+
+	/*Units*/
+  	--unit: .5rem;
+	--unitX2: calc(var(--unit) * 2);
+	--unitX4: calc(var(--unit) * 4);
+	--allWidth: 100%;
+	--allHeight: 100vh;
+}
+
+/*GENERAL AREA*/
+* {/*For all elements*/
+  /*Include padding and border in the element's total width and height*/
+ box-sizing:border-box;
+ /*Reset margin and padding from elements*/
+ margin: 0;
+   padding: 0;
+}
+
+
+body{
+ background-color: var(--white);
+ font-family: 'KoHo', sans-serif;
+ font-weight: 400;
+ font-size: 16px;
+  color: var(--darkGrey);
+}
+
+/*Text*/
+h1{
+	margin: var(--unit) var(--unitX2);
+	text-align:left;
+	font-size: xx-large;
+	font-family:'Sigmar One', cursive;
+	
+}
+
+h1 > span{
+	font-size: x-large;
+	color: var(--lightGrey);
+	margin-left: var(--unit);
+	font-family: 'Limelight', cursive;
+}
+
+
+/*HEADER AREA*/
+header{
+  padding-top: var(--unitX2);
+	background-color: var(--white);
+}
+
+
+nav {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    text-align: center;
+    background-color: var(--darkGrey);
+    
+  }
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+   
+    margin: 0;
+  }
+
+nav ul li {
+    padding: 0.6em 1em;
+    color: var(--white);
+    padding:  var(--unitX2);
+  }
+
+nav ul li:hover {
+    background-color: var(--black);
+  }
+
+nav ul a {
+  text-decoration: none;
+}
+
+  
+/*MAIN AREA*/
+main{
+	background-color: var(--lightGrey);
+  min-height: 76vh;
+}
+
+#homeImg{
+  width: 100%;
+  height: 300px;
+  background-color: var(--darkBlue);
+  margin-bottom: var(--unitX4) 0;
+}
+
+#content{
+	width: 90%;
+	margin: auto;
+  padding: var(--unitX4);
+}
+
+#content .img{
+  width: 60%;
+  height: 100px;
+  background-color: var(--darkBlue);
+  margin: 4em auto;
+}
+
+#content .imgText{
+  display: flex;
+}
+
+#content .imgText .img{
+  width: 150px;
+  height: 100px;
+  background-color: var(--darkBlue);
+  margin:0;
+  margin-right: 2em;
+}
+hr{
+  margin: var(--unitX4) 0;
+}
+
+
+#leftDiv{
+  width: 18%;
+  min-height: 800px; 
+  float:left;
+  background-color: var(--darkBlue);
+  margin-right: 2%;
+}
+
+#rigthDiv{
+  width: 80%;
+  float:left;
+}
+
+#clearDiv{
+  clear: both;
+}
+/*FOOTER AREA*/
+footer{
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding:  var(--unitX2);
+}
+
+footer a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}

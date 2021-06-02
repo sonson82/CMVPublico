@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<title>Ejercicio 02 Typescript</title>
+	
+	<script src="ejercicio02.js"></script>
+	
+</head>
+
+
+<body>
+
+	<header>
+		<h1>EJERCICIO 02 TYPESCRIPT</h1>
+	</header>
+	
+	<main>
+
+        <form>
+            <fieldset>
+                <legend>Buscador de películas: </legend>
+                <br>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo">
+                <button type="button" onclick="verTitulo()">VER RESULTADO</button>
+                <br> <br>
+                <label for="genero">Género (1: acción, 2:infantil, 3:terror, 4:comedia, 5:drama):</label>
+                <input type="number" id="genero" name="genero">
+                <button type="button" onclick="verGenero()">VER RESULTADO</button>
+                <br> <br> 
+                <label for="estrenada">¿Estrenada?</label>
+                <input type="checkbox" id="estrenada" name="estrenada" value="estrenada">
+                <button type="button" onclick="verEstreno()">VER RESULTADO</button>
+                <br><br>
+            </fieldset>
+        </form>
+
+        <div>
+            <h1>RESULTADOS:</h1>
+            <div id="results"> </div>
+        </div>
+
+	</main>
+
+
+	<footer>
+		<div><p>&copy; 2021  <a href="https://sonson82.github.io/CMVPublico/" target="_blank" rel="nofollow">Sònia Pujol</a></p></div>
+	</footer>
+
+</body>
+</html>
