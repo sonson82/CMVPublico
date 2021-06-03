@@ -9,7 +9,7 @@ let getToolsfromXML = () => {
 		getData(this);
 	  }
 	};
-	xhr.open("GET", "https://sonson82.github.io/CMVPublico/JsEjercicios/ejercicio09/orla.xml", true);
+	xhr.open("GET", "orla.xml", true);
 	xhr.send();
 
 }
