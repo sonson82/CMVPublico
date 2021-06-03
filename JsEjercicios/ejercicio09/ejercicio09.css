@@ -72,23 +72,63 @@ main{
 }
 
 #content{
-	width: 90%;
-	margin: auto;
+	width: 80%;
+	margin: var(--unitX4) auto;
+	padding: var(--unitX2);
+	text-align: center;
 }
 
-.salidasJS{
-	margin: var(--unitX4);
+#content button{
+	min-width: 220px;
 	padding: var(--unitX2);
-	background-color: var(--white);
+	border: none;
+	background-color: var(--black);
+	color: var(--white);
+	opacity: .8;
+	border-radius: 10px;
+}
+
+#content button:hover{
+	opacity: 1;
+}
+
+#salidaXML{
+	margin: var(--unitX4) auto;
+}
+
+#salidaIMG{
+	padding: var(--unitX4);
+	width: 90%;
+	max-width: 300px;
+	margin: auto;
+	
+}
+
+#salidaIMG img{
+	width: 100%;
+	height: auto;
 }
 
 ul#toolsList{
-	margin-left: var(--unitX4);
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;	
 	list-style-type: none;
 }
 
 ul#toolsList li{
-	margin-bottom: var(--unitX2);
+	min-width: 200px;
+	padding: var(--unitX2);
+	margin: var(--unitX2);
+	background-color: var(--darkBlue);
+	color: var(--white);
+	opacity: 0.8;
+}
+
+ul#toolsList li:hover{
+	opacity: 1;
 }
 
 #backToMenu{

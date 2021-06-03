@@ -27,7 +27,7 @@
 </head>
 
 
-<body>
+<body onload="getToolsfromXML()">
 	<header>
 		<h1>EJERCICIOS JAVASCRIPT<span> Lectura archivo XML</span></h1>
 	</header>
@@ -35,16 +35,16 @@
 	<main>
 		<div id="content">
 
-			<button  onclick='getToolsfromXML()'>MOSTRAR ELEMENTOS DEL XML</button>
+			<button id="mostrar" onclick='showData()'>MOSTRAR ELEMENTOS XML</button>
+			<button id="ocultar" onclick='hideData()'>OCULTAR ELEMENTOS XML</button>
 
-			<div class="salidasJS" id="salidaXML"></div>
-			<div class="salidasJS" id="salidaIMG"></div>
+			<div id="salidaXML"></div>
+			<div id="salidaIMG"></div>
+			
+		</div>
 
-	
-			<div id="backToMenu">
-				<a href="../../index.html"><p>Volver al menú</p></a>
-			</div>
-
+		<div id="backToMenu">
+			<a href="../../index.html"><p>Volver al menú</p></a>
 		</div>
 		
 	</main>
