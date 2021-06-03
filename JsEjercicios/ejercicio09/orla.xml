@@ -2,7 +2,8 @@
     <tool>
         <id>1</id>
         <name>CSS</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/css.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/css.png</img><
+
         <tags>
             <name>Front-end</name>
             <name>Estilos</name>
@@ -29,7 +30,7 @@
     <tool>
         <id>2</id>
         <name>HTML</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/html.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/html.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de marcas</name>
@@ -46,7 +47,7 @@
     <tool>
         <id>3</id>
         <name>JAVASCRIPT</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/javascript.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de programación</name>
@@ -68,7 +69,7 @@
      <tool>
         <id>4</id>
         <name>JAVA</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/java.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/java.png</img>
         <tags>
             <name>Back-end</name>
             <name>Lenguaje de programación</name>
@@ -95,7 +96,7 @@
      <tool>
         <id>5</id>
         <name>MYSQL</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/mysql.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.png</img>
         <tags>
             <name>Back-end</name>
             <name>Base de datos</name>
@@ -112,7 +113,7 @@
      <tool>
         <id>6</id>
         <name>CSS1</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/css.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/css.png</img>
         <tags>
             <name>Front-end</name>
             <name>Estilos</name>
@@ -139,7 +140,7 @@
     <tool>
         <id>7</id>
         <name>HTML1</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/html.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/html.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de marcas</name>
@@ -156,7 +157,7 @@
     <tool>
         <id>8</id>
         <name>JAVASCRIPT1</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/javascript.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de programación</name>
@@ -178,7 +179,7 @@
      <tool>
         <id>9</id>
         <name>JAVA1</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/java.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/java.png</img>
         <tags>
             <name>Back-end</name>
             <name>Lenguaje de programación</name>
@@ -205,7 +206,7 @@
      <tool>
         <id>10</id>
         <name>MYSQL1</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/mysql.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.png</img>
         <tags>
             <name>Back-end</name>
             <name>Base de datos</name>
@@ -222,7 +223,7 @@
     <tool>
         <id>11</id>
         <name>CSS2</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/css.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/css.png</img>
         <tags>
             <name>Front-end</name>
             <name>Estilos</name>
@@ -249,7 +250,7 @@
     <tool>
         <id>12</id>
         <name>HTML2</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/html.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/html.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de marcas</name>
@@ -266,7 +267,7 @@
     <tool>
         <id>13</id>
         <name>JAVASCRIPT2</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/javascript.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de programación</name>
@@ -288,7 +289,7 @@
      <tool>
         <id>14</id>
         <name>JAVA2</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/java.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/java.png</img>
         <tags>
             <name>Back-end</name>
             <name>Lenguaje de programación</name>
@@ -315,7 +316,7 @@
      <tool>
         <id>15</id>
         <name>MYSQL2</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/mysql.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.png</img>
         <tags>
             <name>Back-end</name>
             <name>Base de datos</name>
@@ -332,7 +333,7 @@
      <tool>
         <id>16</id>
         <name>CSS3</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/css.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/css.png</img>
         <tags>
             <name>Front-end</name>
             <name>Estilos</name>
@@ -359,7 +360,7 @@
     <tool>
         <id>17</id>
         <name>HTML3</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/html.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/html.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de marcas</name>
@@ -376,7 +377,7 @@
     <tool>
         <id>18</id>
         <name>JAVASCRIPT3</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/javascript.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.png</img>
         <tags>
             <name>Front-end</name>
             <name>Lenguaje de programación</name>
@@ -398,7 +399,7 @@
      <tool>
         <id>19</id>
         <name>JAVA3</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/java.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/java.png</img>
         <tags>
             <name>Back-end</name>
             <name>Lenguaje de programación</name>
@@ -425,7 +426,7 @@
      <tool>
         <id>20</id>
         <name>MYSQL3</name>
-        <img>https://github.com/sonson82/CMVPublico/blob/main/proyecto/logo/mysql.png</img>
+        <img>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.png</img>
         <tags>
             <name>Back-end</name>
             <name>Base de datos</name>
