@@ -17,19 +17,22 @@
 	<link href="ejercicio11.css" rel="stylesheet"/>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="application/javascript" src="ejercicio11.js"></script>
+
 </head>
 
 
 <body>
-	<header>
-		<h1>EJERCICIOS JAVASCRIPT<span> MULTIMEDIA HTML5 + JS</span></h1>
+	<header onload="htmlMultimediaFunctions()">
+		<h1>EJERCICIOS JAVASCRIPT<span> MULTIMEDIA HTML5</span></h1>
 	</header>
 
 	<main>
 		<div id="content">
+			
+			<h2>Video & Audio (tracks audio con Javascript)</h2>
+			<br><br>
 
-			<h2>HARRI-JASOTZAILEA</h2>
+			<h3>HARRI-JASOTZAILEA</h3>
 			<br>
 			
 			<video controls width="560" height="auto" poster="video/piedra.jpg" crossorigin>
@@ -41,18 +44,54 @@
 	
 			</video>
 
+			<br><br>
 
-			<br><br><br><br>
-
-			<h2>TXALAPARTA</h2>
+			<h3>TXALAPARTA</h3>
 			<br>
 
-			<audio id="audio" controls autoplay>
+			<audio id="audio" controls>
 				<source src="audio/Txalaparta.mp3" type="audio/mp3">
 				<p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
 				<track id="trk" kind="subtitles"  onCueChange="cueChange()" src="audio/subtitulos_es.vtt" srclang="es" label="spanish" default>
 			</audio>
 			<div id="lyrics"></div>
+
+			<br><br>
+			<h2>Graficos HTML</h2>
+			<br><br>
+			<br><br>
+
+			<div id="graficos">
+			
+				<div>
+					<h3>CANVAS</h3>
+					<br>
+					<canvas id="canvas" width="150" height="150"></canvas>
+				</div>
+				
+	
+				<br><br>
+				<br><br>
+	
+
+				<div>
+					<h3>SVG</h3>
+					<br>
+					
+					<div>
+						<svg width="200" height="200">
+							<circle cx="100" cy="75" r="75" fill="red" />
+							<circle cx="100" cy="75" r="50" fill="mediumseagreen" />
+						</svg>
+					</div>
+
+				</div>
+				
+
+			</div>
+		
+			
+			
 
 		</div>
 
@@ -74,12 +113,80 @@
 		var textTrack = track.track;
 		track.addEventListener("cuechange", cueChange, false);
 		
-		function init(){audio.volume = .3;audio.play();}
+		
 		function cueChange(){
 		var cues = textTrack.activeCues;
 		if (cues.length > 0){
 		lyrics.innerHTML = cues[0].text.replace(/\n/g, '<br>');}}
+		
+
+		function draw() {
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+			var centerX = canvas.width / 2;
+			var centerY = canvas.height / 2;
+			var radius = 70;
+			var eyeRadius = 20;
+			var eyeRadiusInsideA = 1;
+			var eyeRadiusInsideB = 3;
+			var eyeXOffset = 25;
+			var eyeYOffset = 20;
+			
+			// Yellow circle
+			context.beginPath();
+			context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+			context.fillStyle = 'bisque';
+			context.fill();
+			context.lineWidth = 5;
+			context.strokeStyle = 'black';
+			context.stroke();
+				
+			// Eyes
+			context.beginPath();
+			var eyeX = centerX - eyeXOffset;
+			var eyeY = centerY - eyeXOffset;
+			context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+			var eyeX = centerX + eyeXOffset;
+			context.arc(eyeX, eyeY, eyeRadius, 0, 2 * Math.PI, false);
+			context.fillStyle = 'blue';
+			context.fill();
+
+			context.beginPath();
+			var eyeX = centerX - eyeXOffset;
+			var eyeY = centerY - eyeXOffset;
+			context.arc(eyeX, eyeY, eyeRadiusInsideB, 0, 2 * Math.PI, false);
+			var eyeX = centerX + eyeXOffset;
+			context.arc(eyeX, eyeY, eyeRadiusInsideB, 0, 2 * Math.PI, false);
+			context.fillStyle = 'white';
+			context.fill();
+
+			context.beginPath();
+			var eyeX = centerX - eyeXOffset-10;
+			var eyeY = centerY - eyeXOffset-10;
+			context.arc(eyeX, eyeY, eyeRadiusInsideA, 0, 2 * Math.PI, false);
+			var eyeX = centerX + eyeXOffset-10;
+			context.arc(eyeX, eyeY, eyeRadiusInsideA, 0, 2 * Math.PI, false);
+			context.fillStyle = 'white';
+			context.fill();
+			
+
+			// draw the mouth
+			context.beginPath();
+			context.arc(centerX, centerY+10, 30, 0, Math.PI, false);
+			context.fillStyle = 'red';
+			context.fill();
+		}
+
+		function init(){
+			audio.volume = .2;
+			audio.play();
+
+			draw();
+		
+		}
+
 		window.onload = init;
+	
 	
 		</script>
 	

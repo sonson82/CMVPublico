@@ -81,6 +81,14 @@ main{
 	min-height: 2em;
 }
 
+#graficos{
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+	max-width: 600px;
+	margin: auto;
+}
+
 #backToMenu{
 	padding: var(--unitX2) 0 0 var(--unitX2);
 	margin-top: var(--unitX4);
