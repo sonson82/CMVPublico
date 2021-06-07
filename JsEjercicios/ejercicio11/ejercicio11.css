@@ -73,8 +73,7 @@ main{
 
 #content{
 	width: 80%;
-	margin: var(--unitX4) auto;
-	padding: var(--unitX2);
+	margin: var(--unitX2) auto;
 	text-align: center;
 }
 
