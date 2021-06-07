@@ -23,7 +23,7 @@
 
 <body>
 	<header>
-		<h1>EJERCICIOS JAVASCRIPT<span> MULTIMEDIA HTML</span></h1>
+		<h1>EJERCICIOS JAVASCRIPT<span> MULTIMEDIA HTML5 + JS</span></h1>
 	</header>
 
 	<main>
@@ -42,31 +42,17 @@
 			</video>
 
 
-			<br><br><br>
+			<br><br><br><br>
 
 			<h2>TXALAPARTA</h2>
 			<br>
 
-			<audio controls autoplay>
+			<audio id="audio" controls autoplay>
 				<source src="audio/Txalaparta.mp3" type="audio/mp3">
 				<p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+				<track id="trk" kind="subtitles"  onCueChange="cueChange()" src="audio/subtitulos_es.vtt" srclang="es" label="spanish" default>
 			</audio>
-
-			<!--
-
-				//The <audio> element doesn't directly support WebVTT. You will have to find a library or framework that provides the capability 
-				//for you, or write the code to display captions yourself. One option is to play your audio using a <video> element, which does support WebVTT.
-
-				<video controls width="560" height="auto" poster="video/piedra.jpg" crossorigin>
-
-					<source src="audio/Txalaparta.mp3" type="audio/mp3">
-					<track kind="subtitles" src="video/subtitulos_es.vtt" srclang="es" label="spanish" default>
-
-					<p>Your browser doesn't support HTML video. Here is a <a href="https://youtu.be/8rFKwhv2qDs">link to the video</a> instead.</p>
-		
-				</video>
-
-			-->
+			<div id="lyrics"></div>
 
 		</div>
 
@@ -79,6 +65,23 @@
 	<footer>
 		<div><p>&copy; 2021  <a href="https://sonson82.github.io/CMVPublico/" target="_blank" rel="nofollow">Sònia Pujol</a></p></div>
 	</footer>
+
+	<script type="text/javascript">
+	
+		var lyrics = document.getElementById('lyrics');
+		var audio = document.getElementById('audio');
+		var track = document.getElementById('trk');
+		var textTrack = track.track;
+		track.addEventListener("cuechange", cueChange, false);
+		
+		function init(){audio.volume = .3;audio.play();}
+		function cueChange(){
+		var cues = textTrack.activeCues;
+		if (cues.length > 0){
+		lyrics.innerHTML = cues[0].text.replace(/\n/g, '<br>');}}
+		window.onload = init;
+	
+		</script>
 	
 </body>
 </html>

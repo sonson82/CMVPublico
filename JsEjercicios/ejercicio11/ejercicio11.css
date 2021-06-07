@@ -77,6 +77,10 @@ main{
 	text-align: center;
 }
 
+#lyrics{
+	min-height: 2em;
+}
+
 #backToMenu{
 	padding: var(--unitX2) 0 0 var(--unitX2);
 	margin-top: var(--unitX4);
