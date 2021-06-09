@@ -62,8 +62,9 @@
         <tutorial>
             <path>https://www.w3schools.com/js/default.asp</path>
             <name>W3Schools</name>
+        </tutorial> 
         <tutorial>
-        </tutorial>   
+          
             <path>https://www.learn-js.org/</path>
              <name>Learn</name>
         </tutorial>
