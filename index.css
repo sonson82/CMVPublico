@@ -128,11 +128,6 @@ main#content{
 	margin-left: var(--unit);
 }
 
-#menu ul li span.semana {
-	color:var(--white);
-}
-
-
 #menu ul li::before{
 	content: "\25BA";  
 	color: var(--orange);
@@ -150,6 +145,11 @@ main#content{
 .individual-div{
 	margin-top: var(--unit);
 
+}
+
+
+span.semana {
+	color:var(--white);
 }
 
 /*FOOTER AREA*/
