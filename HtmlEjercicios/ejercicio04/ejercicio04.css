@@ -254,6 +254,10 @@ nav ul li:hover{
 }
 
 
+.gallery .textAbsoluteDiv p{
+	margin-top: 1em;
+}
+
 .paragraf{
 	margin: var(--unit2) 0;
 }
@@ -299,6 +303,15 @@ footer{
 
 }
 
+@media screen and (max-width: 900px){
+	.lado{
+		display: none;
+	}
+	.contenido {
+		grid-column: 1/ span3;
+	}
+}
+
 @media screen and (max-width: 760px){
 	 header h1{
 		margin-left: var(--unit);
@@ -309,7 +322,7 @@ footer{
 	}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 	.hideOnSmall{
 		display: none;
 	} 
