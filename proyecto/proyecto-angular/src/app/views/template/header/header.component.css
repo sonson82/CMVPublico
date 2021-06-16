@@ -1,0 +1,66 @@
+header{
+	position: relative;
+}
+
+header h1{
+	text-align: center;
+	padding-top: var(--unitX2);
+	color: var(--white);
+    font-family: 'bangersFont';
+    letter-spacing: 2px;
+	font-size: xxx-large;
+}
+
+header h1 > span{
+	font-size: xx-large;
+	color: var(--orange);
+	margin-left: var(--unit);
+}
+
+header #backLink{
+	position: absolute;
+	top: 0;
+	left: var(--unitX2);
+}
+
+header #backLink > a{
+	font-size: 50px;
+	color: var(--white);
+	text-decoration: none;
+}
+
+header #backLink > a:hover{
+	text-decoration: none;
+	color: var(--orange)
+}
+
+header .showOnSmallDevice{
+	display:none;
+}
+
+
+/*MEDIA*/
+@media screen and (max-width: 500px){
+	
+	header .hideOnSmallDevice{
+		display: none;
+	}
+
+	header .showOnSmallDevice{
+		display:initial;
+	}
+
+}
+
+@media screen and (max-width: 420px){
+	
+	header h1{
+		font-size: xx-large;
+		padding-top: 1.5rem;
+	}
+	
+	header h1 > span{
+		font-size: x-large;
+	}
+
+}
