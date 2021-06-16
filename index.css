@@ -233,3 +233,26 @@ footer{
 	text-align:center;
 	margin-bottom: 2em;
 }
+
+
+/*MEDIAS*/
+
+
+
+@media screen and (max-width: 1200px){	
+	main#content{
+		width: 94%;
+	}
+	#menu ul li{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 700px){	
+
+	#menu .introduccion{
+		margin: var(--unit2) 0px;
+	}
+
+}
