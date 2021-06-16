@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Temps de generació: 10-06-2021 a les 11:14:26
+-- Temps de generació: 16-06-2021 a les 08:42:51
 -- Versió del servidor: 10.4.18-MariaDB
 -- Versió de PHP: 7.3.28
 
@@ -130,6 +130,8 @@ INSERT INTO `has_url` (`url`, `tool`, `type`, `name`) VALUES
 ('https://jqueryui.com/', 8, 1, 'Página Oficial'),
 ('https://lesscss.org/', 19, 1, 'Página Oficial'),
 ('https://material-ui.com/es/', 9, 1, 'Página Oficial'),
+('https://ng-bootstrap.github.io/', 4, 2, 'Bootstrap for Angular'),
+('https://ng-bootstrap.github.io/#/home', 3, 2, 'Bootstrap for Angular'),
 ('https://romualdfons.com/tutorial-wordpress/', 16, 2, 'De 0 a 100'),
 ('https://sass-lang.com', 14, 1, 'Pagina Oficial'),
 ('https://search.google.com/search-console/about?hl=es', 20, 3, 'Google Analalysis'),
