@@ -50,7 +50,6 @@ h1{
 }
 
 h2{
-	margin-top: var(--unit);;
 	text-align:center;
 	color: var(--grey);
 }
@@ -88,7 +87,23 @@ hr{
 
 /*HEADER AREA*/
 header{
-	margin: var(--unit2);
+	width: 90%;
+	max-width: 800px;
+	margin: var(--unit2) auto;
+}
+
+
+
+header div:first-child{
+	padding-bottom: var(--unit);
+	border-bottom: 1px solid var(--white);
+}
+
+header h3{
+	margin-top: var(--unit);
+	text-align: right;
+	color: var(--white);
+	font-weight: 400;
 }
 
 /*MAIN AREA*/
@@ -103,12 +118,44 @@ main#content{
 }
 
 #menu details{
-	margin-top: var(--unit);
+	margin: var(--unit2) 0px;
 }
 
 #menu summary{
 	color: var(--white);
 	cursor: pointer;
+}
+
+#menu details h4{
+	margin-bottom: var(--unit);
+	margin-left: var(--unit2);
+	text-decoration: underline;
+	font-weight: 400;
+}
+
+#menu details h5{
+	margin-left: 5rem;
+	text-decoration: none;
+	font-weight: 400;
+	color:white;
+}
+
+#menu .introduccion{
+	margin: var(--unit2);
+    padding: var(--unit);
+    background-color: rgba(255,255,255,.1);
+	color:white;
+	font-weight: 400;
+}
+
+#menu .introduccion h4{
+	margin-left: 0px;
+}
+
+#menu .introduccion p{
+	font-size: 17px;
+	font-weight: 300;
+	text-align: justify;
 }
 
 #menu ul{
@@ -117,12 +164,19 @@ main#content{
 	list-style: none; 
 }
 
+
 #menu ul li{
 	margin-top:  var(--unit);
 	width: 90%;
 	margin-left: 10%;
 	border-bottom: 1px solid var(--darkGrey);
 }
+
+#menu .introduccion ul li{
+	border-bottom: none;
+	margin-left: var(--unit);
+}
+
 
 #menu ul li span {
 	margin-left: var(--unit);
@@ -133,6 +187,10 @@ main#content{
 	color: var(--orange);
 	display: inline-block; 
 	margin-right: var(--unit);
+}
+
+#menu .introduccion ul li::before{
+	content: none;
 }
 
 #menu ul li span::before {
@@ -156,7 +214,5 @@ span.semana {
 footer{
 	width: var(--allWidth);
 	text-align:center;
-	position: fixed;
-	bottom: 0;
 	margin-bottom: 2em;
 }
