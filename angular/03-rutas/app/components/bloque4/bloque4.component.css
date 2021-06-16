@@ -1,0 +1,28 @@
+
+.div1 {
+    border-top: 10px solid blue; 
+    border-bottom: 5px solid red; 
+    width: 70%;
+    background-color: #A9E2F3;
+}
+.div2 {
+  padding: 1em;
+  margin-bottom: 1em;
+    width: 70%; 
+    background-color: #58FA58;
+    text-align: center;
+}
+.div3 {
+  height: 100px;
+  width: 70%;
+  background-color: #FF0000;
+  text-align: center;
+}
+.div4 {
+  color: yellow;
+}
+
+
+.bloque4{
+  padding-bottom:4em;
+}

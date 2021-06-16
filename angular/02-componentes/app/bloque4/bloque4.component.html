@@ -1,0 +1,35 @@
+<h2>{{ title }}</h2>
+
+<div class="bloque4">
+    <h3>{{ titleA }}</h3>
+
+    <div class="container" [ngStyle]="{'color': color, 'font-weight': 'bold', 'font-size': '150%'}">Texto2</div>
+    <div class="container" [ngClass]="['div3','div4']">Texto3</div>
+
+    <br>
+    <div class="container div1">
+    <!-- Con [(ngModel)] si está seleccionado ckeckbox cambio el valor de la variable -->
+    <input type="checkbox" name="hayLetraGrande" [(ngModel)]="hayLetraGrande">Tamaño<br>
+    <input type="checkbox" name="hayColorFondo" [(ngModel)]="hayColorFondo">Fondo<br>
+    <input type="checkbox" name="hayLetraColor" [(ngModel)]="hayLetraColor">Color<br>
+    <input type="checkbox" name="hayLetraItalica" [(ngModel)]="hayLetraItalica">Italica<br>
+    <input type="checkbox" name="hayBorde" [(ngModel)]="hayBorde">Borde<br>
+   
+        <div class="container div2" [ngStyle]="defineEstilos()">Texto</div>
+    </div>
+    <br>
+    <!-- Pongo los estilos en función de los valores de las variables, através de una función  -->
+    
+    <br/><br/>
+    <div class="container div2">
+    <p> Elige un color; </p>
+    <select name="option" [(ngModel)]="option">
+        <option value="" selected> Elige ... </option>
+        <option value="1"> 1- Rojo</option>
+        <option value="2"> 2- Azul </option>
+        <option value="3"> 3- Blanco </option>
+    </select>
+    <br /><br />
+    <div [ngStyle]="cambEstilos()"> <h2> Texto Select </h2> </div>
+    </div> 
+</div>

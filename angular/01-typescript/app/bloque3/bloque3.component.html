@@ -1,0 +1,19 @@
+<h2>BLOQUE 3</h2>
+<form>
+    <br>
+    <div [class.fondo]="backgroundOn">
+        <br>
+        <input type="checkbox" name="backgroundOn" [(ngModel)]="backgroundOn"> COLOREAR EL CONTENEDOR<br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>Introduce texto en el input: </label>
+        <input type="text" name="input3" [(ngModel)]="value"><br>
+        <div>
+            <p>El valor del input es: <span> {{ value }} </span></p>
+        </div>
+    </div>
+    <br>
+</form>

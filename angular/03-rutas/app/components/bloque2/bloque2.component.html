@@ -1,0 +1,31 @@
+<h2>{{ title }}</h2>
+
+<div class="bloque2">
+
+  <div class="bloque2A">
+    <h3>{{ titleA }}</h3>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info" *ngFor="let person of persons; let i=index">
+        <p>{{i + 1}} - </p>
+        <p>Nombre:  <b>{{ person.name }}</b></p>
+        <p>, edad: <b>{{ person.age}}</b></p>
+      </li>
+    </ul>
+  </div>
+    
+  <div class="bloque2B">
+    <h3>{{ titleB }}</h3>
+    <div class="container bg" [ngSwitch]="'opcion'">  Valor seleccionado:</div>
+      <br>
+      <div class="container">
+        <button class="btn btn-primary btn-lg" (click)="opcion='A'">A</button>
+        <button class="btn btn-primary btn-lg" (click)="opcion='B'">B</button>
+        <button class="btn btn-primary btn-lg" (click)="opcion='C'">C</button>
+        <button class="btn btn-primary btn-lg" (click)="opcion='D'">D</button>
+      </div>
+      <br>  
+    <div class="container bg2"><h5>Boton pulsado : {{opcion}}</h5></div>
+  </div>
+
+</div>
+<hr>

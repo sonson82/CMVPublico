@@ -1,0 +1,7 @@
+Options -Indexes 
+IndexIgnore *
+
+<files .htaccess>
+Order allow,deny
+Deny from all
+</files> 

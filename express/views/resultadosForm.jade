@@ -1,0 +1,26 @@
+include includes/head
+include includes/header
+
+ul.navigation
+  li 
+    a(href="/") HOME
+  li 
+    a(href="/pagina1") Página 1
+  li 
+    a(href="/enviarForm") Página de Formulario
+
+
+block content
+  div.contenido
+    h1= title
+    
+    br
+    br 
+
+    h3 ASUNTO: #{asunto}
+    h3 MENSAJE: #{mensaje}
+
+    br
+    br 
+
+include includes/footer

@@ -1,0 +1,36 @@
+header{
+	padding: 2em;
+	background-color:darkgray;
+}
+
+nav{
+	background-color:grey;
+} 
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    margin: 0 1em;
+    padding: .5em 1em;
+}
+
+nav ul a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover{
+	font-weight: 600;
+    color: black;
+}
+
+nav ul a:hover li{
+	font-weight: 600;
+    background-color:darkgray;
+}

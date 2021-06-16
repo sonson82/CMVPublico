@@ -1,0 +1,33 @@
+include includes/head
+include includes/header
+
+ul.navigation 
+  li 
+    a(href="/") HOME
+  li 
+    a(href="/pagina1") Página 1
+
+
+block content
+  div.contenido
+    h1= title
+
+    form(method="post", action="/enviarForm")
+      br
+      label Asunto:
+      br
+      input(type="text", name="asunto")
+      br
+      br
+      label Mensaje:
+      br
+      textarea(cols="40", rows="10", name="mensaje")
+      br
+      br
+      br
+      button.btn.btn-dark(type="submit") Enviar mensaje
+
+    br
+    br 
+
+include includes/footer

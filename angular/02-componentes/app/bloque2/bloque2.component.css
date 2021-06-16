@@ -1,0 +1,15 @@
+.bloque2{
+    display: flex;
+    align-items: flex-start;
+}
+
+.bloque2 div{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bloque2 .container button{
+  margin:.2em;
+}
+

@@ -1,0 +1,30 @@
+<h2>{{ title }}</h2>
+
+<div class="bloque1">
+    <h3>{{ titleA }}</h3>
+
+    <button type="button" class="btn btn-success tamB" (click)="grupo1=!grupo1"> Grupo1.</button><br>
+
+      <div *ngIf="grupo1" class="uno"><br>
+
+        <button type="button" class="btn btn-primary tamB" (click)="subgrupo11=!subgrupo11">Subgrupo1.1 </button><br>
+        <div *ngIf="subgrupo11" class="dos">Subgrupo1.1<br></div>  
+
+        <button type="button" class="btn btn-primary tamB" (click)="subgrupo12=!subgrupo12">Subgrupo1.2</button><br>
+        <div *ngIf="subgrupo12" class="dos">Subgrupo1.2<br></div>
+      </div>
+
+      <br>
+
+      <button type="button" class="btn btn-success tamB" (click)="grupo2=!grupo2">Grupo2.</button><br>
+         <div *ngIf="grupo2" class="uno"><br>
+
+        <button type="button" class="btn btn-primary tamB" (click)="subgrupo21=!subgrupo21">Subgrupo2.1</button><br>
+        <div *ngIf="subgrupo21" class="dos">Subgrupo2.1<br></div>
+
+        <button type="button" class="btn btn-primary tamB" (click)="subgrupo22=!subgrupo22"> Subgrupo2.2</button><br>
+        <div *ngIf="subgrupo22" class="dos">Subgrupo2.2<br></div>
+    
+</div>
+
+<hr>

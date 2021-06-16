@@ -1,0 +1,69 @@
+<h3>{{ title }} </h3>
+<form [formGroup]='form' (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+
+        <label for ="code"> CÓDIGO </label>
+
+        <input type="text" class="form-control" formControlName="code" #code>
+
+        <div *ngIf="form.controls.code.errors && (form.controls.code.touched||form.controls.code.dirty)">
+          <div *ngIf="form.controls.code.errors.required" class="alert alert-danger">
+                El campo CÓDIGO es obligatorio.
+          </div>
+
+          <div *ngIf="form.controls.code.errors.minlength" class="alert alert-danger">
+              El código debe contener 4 caracteres como mínimo.
+          </div>
+
+          <div *ngIf="form.controls.code.errors.maxlength" class="alert alert-danger">
+                El código debe contener 8 caracteres como máximo.
+          </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for ="name"> NOMBRE </label>
+        <input type="text" class="form-control" formControlName="name" #name>
+
+        <div *ngIf="form.controls.name.errors && (form.controls.name.touched||form.controls.name.dirty)">
+
+            <div *ngIf="form.controls.name.errors.required" class="alert alert-danger">
+                El campo NOMBRE es obligatorio.
+            </div>
+
+            <div *ngIf="form.controls.name.errors.minlength" class="alert alert-danger">
+                El código debe contener 2 caracteres como mínimo.
+            </div>
+        </div>
+            
+    </div>
+
+    <div class="form-group">
+        <label for ="phone"> TELÉFONO </label>
+        <input type="tel" class="form-control" formControlName="phone" #phone>
+
+        <div *ngIf="form.controls.phone.errors && (form.controls.phone.touched||form.controls.phone.dirty)">
+
+            <div *ngIf="form.controls.phone.errors.required" class="alert alert-danger">
+                El campo TELÉFONO es obligatorio.
+            </div>
+
+            <div *ngIf="(form.controls.phone.errors.minlength) || (form.controls.phone.errors.validatePhone)" class="alert alert-danger">
+                No es un teléfono válido.
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success" [disabled]="!form.valid">Submit</button>        
+    </div>
+
+</form>
+
+<div class="container-fluid fondo p-1 m-1">
+    Codigo: {{ code.value }}<br>
+    Nombre: {{ name.value }}<br>
+    Teléfono: {{ phone.value }}<br>
+</div>

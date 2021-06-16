@@ -1,0 +1,51 @@
+include includes/head
+include includes/header
+
+ul.navigation
+  li 
+    a(href="/") HOME
+  li 
+    a(href="/enviarForm") Página de Formulario
+
+
+block content
+  div.contenido
+    h1= title
+
+    - var name = "utilización de elementos"
+    h2 INCLUYE  #{name}:
+
+    br
+    br
+
+    h2 Looping over an array 
+    - arrayList = ['ITEM 01', 'ITEM 02', 'ITEM 03', 'ITEM 04', 'ITEM 05']
+    ul
+      each item in arrayList
+        li #{item} 
+   
+    br
+    br
+
+    h2 Playing with variables
+    - booleanVariable = true
+    - if (booleanVariable)
+      p Variable has TRUE value
+    - else
+      p Variable has FALSE value
+    br
+
+    h2 Playing with scripts and bootstrap.
+    button.btn.btn-info(onclick='clickme()')  SHOW ALERT
+    script.
+      function clickme() {
+        alert('Alert Javascript in Jade, playing with scripts')
+      }
+    
+
+    br
+    br
+
+
+include includes/footer
+

@@ -1,0 +1,8 @@
+
+.bloque1{
+    display: flex;
+}
+
+.bloque1 div:first-child{
+  margin-right: 2em;
+}

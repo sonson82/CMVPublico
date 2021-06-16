@@ -1,0 +1,73 @@
+<h1 class="pageTitle">{{title}}</h1>
+<br>
+<br>
+
+<div>
+    <h3>Pipes LOWERCASE AND UPPERCASE</h3>
+    <label>Text:</label>
+    <br>
+    <input #text (keyup)="change(text.value)" type="text">
+    <br>
+    <br>
+    <p *ngIf="value">In lowercase: {{value | lowercase}}</p>
+    <p *ngIf="value">In uppercase: {{value | uppercase}}</p>
+</div>
+
+<br>
+<br>
+
+<div>
+    <h3>FACTORIAL</h3>
+    <label>Number:</label>
+    <br>
+    <input type="text" name="fact" [(ngModel)]="num1">
+    <br>
+    <br>
+    <p *ngIf="num1"> Resultado: {{num1 | factorial}}</p>
+</div>
+
+
+<br>
+<br>
+
+<div>
+    <h3>SUMATORIO</h3>
+    <label>Number:</label>
+    <br>
+    <input type="text" name="suma" [(ngModel)]="num2">
+    <br>
+    <br>
+    <p *ngIf="num2"> Resultado: {{num2 | sumatorio}}</p>
+</div>
+
+
+<br>
+<br>
+
+<div>
+    <h3>CUBO</h3>
+    <label>Numbers:</label>
+    <br>
+    <input type="text" name="cubo" [(ngModel)]="num3">
+    <br> <br>
+    <input type="text" name="cubo" [(ngModel)]="num4">
+    <br>
+    <br>
+    <p *ngIf="num3 && num4"> Resultado: {{num3 | cubo:num4}}</p>
+</div>
+
+
+<br>
+<br>
+
+<div>
+    <h3>CUADRADO</h3>
+    <label>Numbers:</label>
+    <br>
+    <input type="text" name="cuad" [(ngModel)]="num5">
+    <br> <br>
+    <input type="text" name="cuad" [(ngModel)]="num6">
+    <br>
+    <br>
+    <p *ngIf="num5 && num6"> Resultado: {{num5 | cuadrado:num6}}</p>
+</div>

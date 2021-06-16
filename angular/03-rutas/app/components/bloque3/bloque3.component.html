@@ -1,0 +1,18 @@
+<h2>{{ title }}</h2>
+
+<div class="bloque3">
+  <h3>{{ titleA }}</h3>
+
+    <div class="container bg">
+      <br>
+      <!-- Anotación [()] conocida como "banana in a box":  actualiza los valores de la variables usadas -->
+      <!-- Ejemplo típico en un INPUT; cambio ( actualizo ) el valor de la variable al introducir valor -->
+      <input class="form-control" [(ngModel)]="nombre" (keyup)="cambiaNombre()"><br>
+      <input class="form-control" [(ngModel)]="nombre2" (keyup)="cambiaNombre2()"><br>
+    </div>
+    <br>
+    <!-- Se muestra SOLO si hay algún texto introducido -->
+    <div *ngIf="nombre" class="container bg2">
+      <h3>Hola {{ nombre }} / {{ nombre2 }}</h3>
+    </div>
+</div>
