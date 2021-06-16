@@ -109,12 +109,12 @@ header h3{
 /*MAIN AREA*/
 main#content{
 	width: 80%;
-	margin: var(--unit) auto;
+	margin: 4em auto 6em auto;
 }
 
 #menu {
 	width: 80%;
-	margin: auto;
+	margin: var(--unit2) auto;
 }
 
 #menu details{
@@ -156,6 +156,7 @@ main#content{
 	font-size: 17px;
 	font-weight: 300;
 	text-align: justify;
+	margin-bottom: .5em;
 }
 
 #menu ul{
@@ -164,15 +165,20 @@ main#content{
 	list-style: none; 
 }
 
+#menu .introduccion ul{
+	margin-bottom: 0px;
+}
+
 
 #menu ul li{
-	margin-top:  var(--unit);
 	width: 90%;
-	margin-left: 10%;
+	margin: 0px auto;
+	margin-top:  var(--unit);
 	border-bottom: 1px solid var(--darkGrey);
 }
 
 #menu .introduccion ul li{
+	margin-top:  1em;
 	border-bottom: none;
 	margin-left: var(--unit);
 }
@@ -181,6 +187,13 @@ main#content{
 #menu ul li span {
 	margin-left: var(--unit);
 }
+
+#menu .introduccion ul li span{
+	margin-left: 0px;
+	margin-right: .5em;
+	color:#969696;
+}
+
 
 #menu ul li::before{
 	content: "\25BA";  
@@ -200,11 +213,15 @@ main#content{
 	margin-right: var(--unit);
 }
 
-.individual-div{
-	margin-top: var(--unit);
-
+#menu .introduccion ul li span::before{
+	color:#969696;
 }
 
+#menu details > details summary {
+	width: 90%;
+	margin: auto;
+	font-weight: 300;
+}
 
 span.semana {
 	color:var(--white);
