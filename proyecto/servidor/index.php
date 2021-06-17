@@ -5,7 +5,9 @@ require_once('system/headers.php'); // Get Headers
 require_once('system/db_connect.php');
 
 
+
 $tools = [];
+
 
 
 try {
@@ -188,6 +190,7 @@ try {
 	$conn->rollback();
 }
 
+$conn=null;
 
 echo json_encode([$tools, $tagsArray]);
 
