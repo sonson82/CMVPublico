@@ -18,7 +18,7 @@ export class AppComponent {
     
     //If browser refresh we will route to inicio
     if(this.browserRefreshService.getBrowserRefresh()){
-      this.router.navigate(['/', 'inicio']);
+      this.router.navigate(['', 'inicio']);
     }
     
   }

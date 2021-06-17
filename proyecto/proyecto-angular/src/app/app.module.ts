@@ -31,7 +31,7 @@ import { SearchComponent } from './components/search/search.component';
 const appRoutes: Routes = [
   { path: 'favorites', component: FavoritesComponent },
   { path: 'inicio', component: InicioComponent },
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' } 
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' } 
 ]
 
 @NgModule({

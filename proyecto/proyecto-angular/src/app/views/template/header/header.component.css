@@ -11,7 +11,7 @@ header h1{
 	font-size: xxx-large;
 }
 
-header h1 > span{
+header h1 > span.orangeTitle{
 	font-size: xx-large;
 	color: var(--orange);
 	margin-left: var(--unit);
@@ -40,7 +40,7 @@ header .showOnSmallDevice{
 
 
 /*MEDIA*/
-@media screen and (max-width: 500px){
+@media screen and (max-width: 750px){
 	
 	header .hideOnSmallDevice{
 		display: none;
@@ -51,16 +51,18 @@ header .showOnSmallDevice{
 	}
 
 }
+@media screen and (max-width: 500px){
+	
+	header #backLink > a{
+		font-size: 40px;
 
-@media screen and (max-width: 420px){
-	
-	header h1{
-		font-size: xx-large;
-		padding-top: 1.5rem;
 	}
-	
-	header h1 > span{
-		font-size: x-large;
+
+	header #backLink{
+		top: 10px;
 	}
 
 }
+
+
+
