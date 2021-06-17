@@ -1,0 +1,231 @@
+<tools>
+    <tool>
+        <id>1</id>
+        <name>CSS</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/css.png</png>
+        <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/css.webp</webp>
+
+        <tags>
+            <name>Front-end</name>
+        </tags>
+        <tags>
+            <name>Estilos</name>
+        </tags>
+
+        <tutorial>
+            <path>https://www.w3schools.com/css/</path>
+            <name>W3Schools</name>
+        </tutorial>
+        <tutorial>
+            <path>https://www.tutorialesprogramacionya.com/cssya/index.php?inicio=10</path>
+            <name>CSS Ya</name>
+        </tutorial>
+        <tutorial>
+            <path>https://www.tutorialesprogramacionya.com/cssya/css3ya/</path>
+            <name>CSS3 Ya</name>
+        </tutorial>
+
+    </tool>
+
+    <tool>
+        <id>2</id>
+        <name>HTML</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/html.png</png>
+        <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/html.webp</webp>
+        <tags>
+            <name>Front-end</name>
+        </tags>
+        <tags>
+            <name>Lenguaje de marcas</name>
+        </tags>
+
+
+        <tutorial>
+            <path>https://www.w3schools.com/html/default.asp</path>
+            <name>W3Schools</name>
+        </tutorial>
+
+    </tool>
+
+    <tool>
+        <id>3</id>
+        <name>JAVASCRIPT</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.png</png>
+         <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.webp</webp>
+        <tags>
+            <name>Front-end</name>
+        </tags>
+        <tags>
+            <name>Lenguaje de programación</name>
+        </tags>
+        
+        <tutorial>
+            <path>https://www.w3schools.com/js/default.asp</path>
+            <name>W3Schools</name>
+        </tutorial> 
+        <tutorial>
+            <path>https://www.learn-js.org/</path>
+             <name>Learn</name>
+        </tutorial>
+    </tool>
+
+     <tool>
+        <id>4</id>
+        <name>JAVA</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/java.png</png>
+         <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/java.webp</webp>
+        <tags>
+            <name>Back-end</name>
+        </tags>
+        <tags>
+            <name>Lenguaje de programación</name>
+        </tags>
+        <oficial>
+            <path>https://www.java.com/es/</path>
+            <name>Página oficial</name>
+        </oficial>
+        <tutorial>
+            <path>https://www.w3schools.com/java/default.asp</path>
+            <name>W3Schools</name>
+         </tutorial>
+        <tutorial>
+            <path>https://www.learnjavaonline.org/</path>
+            <name>Learn</name>
+        </tutorial>
+
+    </tool>
+
+     <tool>
+        <id>5</id>
+        <name>MYSQL</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.png</png>
+        <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.webp</webp>
+        <tags>
+            <name>Back-end</name>
+        </tags>
+        <tags>
+            <name>Base de datos</name>
+        </tags>
+        <tutorial>
+            <path>https://www.w3schools.com/sql/default.asp</path>
+            <name>W3Schools</name>
+        </tutorial>
+
+
+    </tool>
+    <tool>
+        <id>6</id>
+        <name>CSS</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/css.png</png>
+        <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/css.webp</webp>
+
+        <tags>
+            <name>Front-end</name>
+        </tags>
+        <tags>
+            <name>Estilos</name>
+        </tags>
+
+        <tutorial>
+            <path>https://www.w3schools.com/css/</path>
+            <name>W3Schools</name>
+        </tutorial>
+        <tutorial>
+            <path>https://www.tutorialesprogramacionya.com/cssya/index.php?inicio=10</path>
+            <name>CSS Ya</name>
+        </tutorial>
+        <tutorial>
+            <path>https://www.tutorialesprogramacionya.com/cssya/css3ya/</path>
+            <name>CSS3 Ya</name>
+        </tutorial>
+
+    </tool>
+
+    <tool>
+        <id>7</id>
+        <name>HTML</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/html.png</png>
+        <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/html.webp</webp>
+        <tags>
+            <name>Front-end</name>
+        </tags>
+        <tags>
+            <name>Lenguaje de marcas</name>
+        </tags>
+
+
+        <tutorial>
+            <path>https://www.w3schools.com/html/default.asp</path>
+            <name>W3Schools</name>
+        </tutorial>
+
+    </tool>
+
+    <tool>
+        <id>8</id>
+        <name>JAVASCRIPT</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.png</png>
+         <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/javascript.webp</webp>
+        <tags>
+            <name>Front-end</name>
+        </tags>
+        <tags>
+            <name>Lenguaje de programación</name>
+        </tags>
+        
+        <tutorial>
+            <path>https://www.w3schools.com/js/default.asp</path>
+            <name>W3Schools</name>
+        </tutorial> 
+        <tutorial>
+            <path>https://www.learn-js.org/</path>
+             <name>Learn</name>
+        </tutorial>
+    </tool>
+
+     <tool>
+        <id>9</id>
+        <name>JAVA</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/java.png</png>
+         <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/java.webp</webp>
+        <tags>
+            <name>Back-end</name>
+        </tags>
+        <tags>
+            <name>Lenguaje de programación</name>
+        </tags>
+        <oficial>
+            <path>https://www.java.com/es/</path>
+            <name>Página oficial</name>
+        </oficial>
+        <tutorial>
+            <path>https://www.w3schools.com/java/default.asp</path>
+            <name>W3Schools</name>
+         </tutorial>
+        <tutorial>
+            <path>https://www.learnjavaonline.org/</path>
+            <name>Learn</name>
+        </tutorial>
+
+    </tool>
+
+     <tool>
+        <id>10</id>
+        <name>MYSQL</name>
+        <png>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.png</png>
+        <webp>https://sonson82.github.io/CMVPublico/proyecto/logo/mysql.webp</webp>
+        <tags>
+            <name>Back-end</name>
+        </tags>
+        <tags>
+            <name>Base de datos</name>
+        </tags>
+        <tutorial>
+            <path>https://www.w3schools.com/sql/default.asp</path>
+            <name>W3Schools</name>
+        </tutorial>
+
+
+    </tool>
+  
+</tools>
