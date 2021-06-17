@@ -247,6 +247,11 @@ footer{
 		width: 100%;
 	}
 
+	#menu .introduccion ul li span::before{
+		content: "";  
+		margin-right: 0px;
+	}
+
 }
 
 @media screen and (max-width: 700px){	
