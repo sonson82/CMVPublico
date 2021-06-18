@@ -1,0 +1,40 @@
+﻿/*FONTS*/
+
+@font-face {
+	
+	font-family: 'bangersFont';
+	
+	src: url('bangers/Bangers-Regular.eot');
+	src: url('bangers/Bangers-Regular.eot?#iefix') format('embedded-opentype'), 
+		 url('bangers/Bangers-Regular.woff2') format('woff2'), 
+ 		 url('bangers/Bangers-Regular.woff') format('woff'), 
+		 url('bangers/Bangers-Regular.ttf') format('truetype'),
+		 url('bangers/Bangers-Regular.otf') format('opentype');
+}
+
+
+@font-face {
+
+	font-family: 'nunitoFont';
+
+	src: url("nunito/NunitoSans-Light.eot");
+	src: url('nunito/NunitoSans-Light.eot?#iefix') format('embedded-opentype'), 
+		 url('nunito/NunitoSans-Light.woff2') format('woff2'), 
+ 		 url('nunito/NunitoSans-Light.woff') format('woff'), 
+		 url('nunito/NunitoSans-Light.ttf') format('truetype'),
+		 url('nunito/NunitoSans-Light.otf') format('opentype');
+}
+
+
+@font-face {
+
+	font-family: 'nunitoFont-regular';
+
+	src: url("nunito/NunitoSans-Regular.eot");
+	src: url('nunito/NunitoSans-Regular.eot?#iefix') format('embedded-opentype'), 
+		 url('nunito/NunitoSans-Regular.woff2') format('woff2'), 
+ 		 url('nunito/NunitoSans-Regular.woff') format('woff'), 
+		 url('nunito/NunitoSans-Regular.ttf') format('truetype'),
+		 url('nunito/NunitoSans-Regular.otf') format('opentype');
+}
+	

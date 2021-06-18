@@ -1,0 +1,41 @@
+<ng-template #content let-modal>
+
+    <form [formGroup]='form' (ngSubmit)="onSubmit()">
+
+    <div class="modal-body" >
+
+
+        <div class="form-group">
+
+          <div id="searchDiv">
+            <img src="../../../assets/img/searchOrange.png" width="50px" height="auto" alt="Icono de lupa">
+            <input type="text" class="form-control" formControlName="search" #search value="">
+          </div>
+
+            <p>* La búsqueda se realiza sobre el nombre indicado en la base de datos o archivo XML. </p>
+
+                <button type="button" class="btn btn-dark" (click)="collapse.toggle(); changeText();" [attr.aria-expanded]="!isCollapsed">
+                      {{collapseText}}
+                </button>
+                            
+                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+                    <div class="card">
+                      <div class="card-body">
+                        <p><span>Por ejemplo, en caso de que el nombre sea JAVASCRIPT, se localizará con texto similar a java, script, jav, ava, ascri... o cualquier otra opción; pero no por JS. </span></p>
+                      </div>
+                    </div>
+                </div>
+        </div>
+       
+    </div>
+    
+    <div class="modal-footer">
+        <button id="submitButton" type="submit" class="btn btn-dark" (click)="modal.close('Close click')" [disabled]="!form.valid">{{ submitText }} </button>
+        <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">CANCELAR</button>
+    </div>
+
+</form>
+</ng-template>
+
+  <div id="searchIcon" (click)="open(content)"></div>
+

@@ -1,0 +1,46 @@
+<div [ngClass]="isBack ? 'card card-flip backView' : 'card card-flip'" id ="{{tool.id}}" (click)="flipCard()">
+
+    <div  class="card-front imgDiv" >
+        <div class="imgPicture transitionDiv">
+            <picture>
+                <source srcset="{{tool.png}}" type="image/png"/>
+                <source srcset="{{tool.webp}}" type="image/webp"/>
+                <img class="img-fluid" src="{{tool.png}}" alt="Imagen del logotipo de {{tool.name}}">
+            </picture>
+        </div>
+
+        <div class="imgText transitionDiv">
+            <p>{{tool.name}}</p>
+        </div>
+    </div>
+
+    <div class="card-back linkDiv">
+
+        <div [className]="fontSize ? 'links bigText' : 'links'">
+
+            <p>{{tool.name}}</p>
+      
+            <div class="oficial pages" *ngIf="tool.oficialPage" >
+    
+                <a href="{{tool.oficialPage.url}}" target="_blank">{{tool.oficialPage.name}}</a> 
+               
+            </div>
+
+            <div class="tutorial pages" *ngIf="tool.tutorialsPages.length != 0" >
+                <p>TUTORIALES</p>
+                <div *ngFor="let tutorial of tool.tutorialsPages">
+                    <a href="{{tutorial.url}}" target="_blank">{{tutorial.name}}</a> 
+                </div>
+            
+            </div>
+    
+            <div class="analisi pages" *ngIf="tool.analisisPages.length != 0">
+                <p>ANÁLISIS</p>
+                <div *ngFor="let analisi of tool.analisisPages">
+                    <a href="{{analisi.url}}" target="_blank">{{analisi.name}}</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

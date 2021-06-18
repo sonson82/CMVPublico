@@ -1,0 +1,51 @@
+#searchIcon{
+    width: 45px;
+    height: 45px;
+    background-image: url("../../../assets/img/searchWhite.png");
+	background-position: center;
+	background-repeat: no-repeat; 
+
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+
+    position: fixed;
+    top: 1.2rem;
+    right: 5.5rem;
+
+    cursor:pointer;
+}
+
+#searchIcon:hover{
+    background-image: url("../../../assets/img/searchOrange.png");
+}
+
+.light-blue-backdrop {
+    background-color:var(--darkGreen);
+}
+
+.modal-body > div {
+    margin-bottom: var(--unit);
+}
+
+.form-check-label{
+    margin-left: var(--unit);
+}
+
+.form-group input{
+    margin:var(--unitX4) auto;
+    width: 80%; 
+}
+
+
+
+@media screen and (max-width: 500px){
+	#searchIcon{
+        width: 35px;
+        height: 35px;
+        top: 1.5rem;
+        right: 4rem;
+    }
+	
+}

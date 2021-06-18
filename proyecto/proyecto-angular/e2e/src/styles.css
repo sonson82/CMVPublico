@@ -1,0 +1,106 @@
+/* 
+INDEX:
+	IMPORTS
+	VARIABLES
+	GENERAL AREA
+	GRID AREA
+	BOOTSTRAP OVERRIDE AREA
+*/
+
+
+/*IMPORTS*/
+@import "assets/fonts/fonts.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+/*VARIABLES*/
+:root {
+	/*Colors*/
+	--black: #000;
+	--white: #fff;
+	--lightGrey: ;
+	--darkGrey: #212121;
+	--darkGreen: #2F4F4F;
+	--orange: #F5B041;
+
+	/*Units*/
+  	--unit: .5rem;
+	--unitX2: calc(var(--unit) * 2);
+	--unitX4: calc(var(--unit) * 4);
+	--allWidth: 100%;
+	--allHeight: 100vh;
+}
+
+
+/*GENERAL AREA*/
+* {
+	box-sizing:border-box;
+	margin: 0;
+  	padding: 0;
+
+}
+
+body{
+	background-color: var(--white);
+	font-family: 'nunitoFont';
+	font-weight: 400;
+	font-size: 16px;
+ 	color: var(--darkGrey);
+}
+
+
+
+/*GRID AREA*/
+.grid {
+	display: grid;
+	grid-template-columns: 250px repeat(3,1fr);
+	grid-template-rows: 80px auto 40px;
+	grid-gap: 0;
+	width: var(--allWidth);
+	height: var(--allHeight);
+}
+		
+.grid-itemA {
+	grid-area: header;
+	grid-column: 1 / span 4;
+	grid-row: 1 / span 1;
+	background-color:  var(--darkGreen);
+}
+
+.grid-itemB {
+	grid-area: main;
+	grid-column: 1 / span 4;
+	grid-row: 2 / span 1;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+}
+		
+.grid-itemC {
+	grid-area: footer;
+	grid-column: 1 / span 4;
+	grid-row: 3 / span 1;
+	background-color:  var(--darkGreen);
+}
+
+
+/*BOOTSTRAP OVERRIDE*/
+.btn-dark{
+    background-color: var(--darkGreen) !important;
+    opacity: .9;
+}
+
+.btn-dark:hover{
+    opacity: 1;
+	color:var(--orange); 
+}
+
+#inicio button.btn.btn-dark.btn-lg.btn-block {
+    width: 90%;
+	max-width: 800px;
+	margin: 2em auto;
+    display:block !important;
+}
+
+

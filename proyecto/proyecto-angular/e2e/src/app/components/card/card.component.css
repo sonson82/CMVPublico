@@ -1,0 +1,219 @@
+.card {
+	flex: 0 1 auto;
+	margin: var(--unitX2);
+	min-width: 350px;
+	border-radius: 10px;
+    position: relative;	
+	border: none;
+}
+
+
+.card .imgDiv{	
+	text-align: center;
+	border-radius: 10px;
+
+	-webkit-box-shadow: 5px 5px 10px var(--lightGrey);
+    -moz-box-shadow: 5px 5px 10px var(--lightGrey);
+	box-shadow: 5px 5px 10px var(--lightGrey);
+
+	background-color: var(--darkGrey);
+	background-image: url("../../../assets/img/code.jpg");
+	background-position: center;
+	background-repeat: no-repeat; 
+
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+
+	position:relative;
+}
+
+.card .imgDiv img {
+	max-width: 200px;
+}
+
+.card .imgDiv .imgText{
+	position: absolute;
+	right:5px;
+	bottom:5px;
+	font-size: xx-large;
+	font-family:'bangersFont';
+	letter-spacing: 2px;
+	color: var(--white);
+} 
+
+.card .linkDiv{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	color: var(--darkGrey);
+
+	-webkit-box-shadow: 5px 5px 15px var(--darkGrey);
+    -moz-box-shadow: 5px 5px 15px var(--darkGrey);
+	box-shadow: 5px 5px 15px var(--darkGrey);
+
+	background-color: var(--white);
+	background-image: url("../../../assets/img/backCode.jpg");
+	background-position: center;
+	background-repeat: no-repeat; 
+
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+	-webkit-flex-flow:row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow:row nowrap;
+	flex-flow: row nowrap;
+	
+	-webkit-align-items: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+	align-items: center;
+
+	-webkit-align-content: stretch;
+	align-content: stretch;
+
+	justify-content: flex-start;	
+}
+
+.card .linkDiv > div{
+	position: relative;
+	width: 18%;
+	height:100%;
+}
+
+.card .linkDiv .links{	
+	width: 100%;
+	padding: var(--unitX2);
+	margin-left: 18%;
+	text-align: left;
+}
+
+.card .linkDiv .links.bigText p,
+.card .linkDiv .links.bigText .pages a{
+	font-size:x-large;	
+}
+
+.card .linkDiv .links.bigText > p:first-child{
+	font-size:xx-large;
+}
+
+.card .linkDiv .links > p {
+	font-family:'bangersFont';
+	font-size: x-large;
+	letter-spacing: 2px;
+	color: var(--white);
+	margin-bottom: 0;
+}
+
+
+.card .linkDiv .links .pages{
+	padding: var(--unit);
+    margin-bottom: var(--unit);
+}
+
+.card .linkDiv .links .pages p{
+    text-decoration: underline;
+    margin-bottom: var(--unit);
+}
+
+.card .linkDiv .links .pages > div{
+    margin-left: var(--unitX2);
+}
+
+.card .linkDiv .links .pages a{
+	color: var(--black);
+    text-decoration: none;
+    font-family: 'nunitoFont-regular';
+    font-size: large;
+}
+
+.card .linkDiv .links .pages a:hover{
+	color: var(--white);
+	text-decoration: none;
+}
+
+
+/*transitions*/
+.card .imgDiv .transitionDiv{
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.card .imgDiv .imgPicture{	
+	-webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.card .imgDiv:hover .imgPicture{
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5) translate(-120px, -60px);
+}
+
+.card .imgDiv .imgText{
+	opacity : 0;
+	filter: alpha(0 * 100); 
+} 
+
+.card .imgDiv:hover .imgText{
+	transform: translate(-50px);
+	opacity: 1;
+	filter: alpha(1 * 100);
+} 
+/*---------*/
+
+
+/*flip*/
+.card-flip > div {
+	backface-visibility: hidden;
+	transition: transform 300ms;
+	transition-timing-function: linear;
+  }
+  
+  .card-front {
+	transform: rotateY(0deg);
+  }
+  
+  .card-back {
+	transform: rotateY(180deg);
+	position: absolute;
+	top: 0;
+  }
+  
+  .card-flip.backView .card-front {
+	transform: rotateY(-180deg);
+  }
+	
+  .card-flip.backView .card-back {
+	transform: rotateY(0deg);
+  }
+
+
+  .card.card-flip.backView .linkDiv .links{	
+	overflow:scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
+	direction: rtl; 
+}
+
+
+/*----------*/

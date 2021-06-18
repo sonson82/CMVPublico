@@ -1,0 +1,22 @@
+
+<ng-template #content let-modal>
+
+    <div class="modal-body" *ngIf="tags.length != 0" >
+
+        <img src="../../../assets/img/filterOrange.png" width="50px" height="auto" alt="Icono de filtro">
+
+        <div *ngFor="let tag of tags; index as i">
+                <input type="checkbox" class="form-check-input" [checked]="tag.iSelected" (change)="changeState(tag.id)" id="{{tag.id}}">
+                <label class="form-check-label" for="{{tag.id}}">{{tag.name}}</label>
+        </div>
+    </div>
+    
+    <div class="modal-footer">
+        <button id="submitButton" type="button" class="btn btn-dark" (click)="modal.close('Close click'); submit($event)">{{ submitText }}</button>
+        <button type="button" class="btn btn-secondary" (click)="cleanFilters()">LIMPIAR FILTROS</button>
+        <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">CANCELAR</button>
+    </div>
+</ng-template>
+
+  <div id="filterIcon" (click)="open(content)"></div>
+

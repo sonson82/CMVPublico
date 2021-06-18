@@ -1,0 +1,21 @@
+<div *ngIf="!showAll" id="spinner">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</div>
+
+<div id="toolsList" *ngIf="showAll" >
+
+    <div *ngIf="tools.length == 0">
+        <div class="errormessage">
+            <p>LO SENTIMOS, NO HAY RESULTADOS CON ESTOS CRITERIOS.</p>
+        </div>  
+    </div> 
+
+    <div *ngFor="let tool of tools">
+        <app-card [tool]="tool"></app-card>
+    </div>
+    
+</div>
+
+<div id="changeTextIcon" (click)="changeText()"></div>
