@@ -1,0 +1,14 @@
+//BOOTSTRAP
+@import "~bootstrap/scss/bootstrap";
+
+// GENERAL
+@import 'general/colors';
+@import 'general/mixins';
+@import 'general/global';
+
+//TEMPLATE
+@import 'template/header';
+@import 'template/footer';
+
+//COMPONENTS
+@import 'components/component2';

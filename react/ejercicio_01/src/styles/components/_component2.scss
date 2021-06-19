@@ -1,0 +1,20 @@
+.component2{
+    .inline-list {
+        @include inline-flex();
+    
+        & .media_link {
+            margin: 0px 2rem;
+
+            & svg {
+                font-size: 3rem;
+                padding: .2rem .1rem;
+                color: $darkGrey;
+            
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    } 
+}
+
