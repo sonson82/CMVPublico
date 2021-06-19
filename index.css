@@ -133,12 +133,20 @@ main#content{
 	font-weight: 400;
 }
 
+#menu details h6{
+	margin-bottom: var(--unit);
+	margin-left: var(--unit2);
+	font-weight: 400;
+	font-size: 16px;
+}
+
 #menu details h5{
 	margin-left: 5rem;
 	text-decoration: none;
 	font-weight: 400;
 	color:white;
 }
+
 
 #menu .introduccion{
 	margin: var(--unit2);
