@@ -1,0 +1,7 @@
+header{
+    background-color: $darkGrey;
+    color: $yellow;
+    padding-top: 2rem;
+    text-align: center;
+    @include sticky-top(0);
+}
