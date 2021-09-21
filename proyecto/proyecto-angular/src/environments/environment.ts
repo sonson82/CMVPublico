@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl:"http://mcv-accenture-angular.spmultimedia.pro/project-server/index.php"
+  baseUrl:"https://mcv-accenture-angular.spmultimedia.pro/project-server/index.php"
 };
 
 /*
